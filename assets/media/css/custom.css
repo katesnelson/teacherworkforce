@@ -1,20 +1,19 @@
-/* Make hero avatar large and rectangular */
-.avatar {
-  width: 300px !important;
+/* Homepage hero avatar: make it large and rectangular */
+#hero img,
+#hero .avatar img,
+#hero [class*="avatar"] img {
+  width: 420px !important;
+  max-width: 90vw !important;
   height: auto !important;
-  border-radius: 0 !important; /* removes circle */
-}
-
-/* Remove container constraints */
-.avatar img {
+  border-radius: 0 !important;
   object-fit: contain !important;
-  width: 100% !important;
-  height: auto !important;
 }
 
-/* Optional: make it even bigger on desktop */
-@media (min-width: 768px) {
-  .avatar {
-    width: 400px !important;
-  }
+/* Remove circular avatar wrapper styling */
+#hero .avatar,
+#hero [class*="avatar"] {
+  width: 420px !important;
+  max-width: 90vw !important;
+  height: auto !important;
+  border-radius: 0 !important;
 }
