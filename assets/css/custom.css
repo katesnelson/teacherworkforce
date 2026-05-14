@@ -4,7 +4,7 @@
 #hero div:has(> img),
 #hero picture {
   width: 420px !important;     /* scaled up version of 260 */
-  height: auto !important;     /* let image control height */
+  height: 149px !important;     /* let image control height */
   max-width: 90vw !important;
   overflow: hidden !important;
   border-radius: 0 !important;
