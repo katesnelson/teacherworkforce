@@ -11,25 +11,24 @@ sections:
     id: hero
     content:
       username: me
-      greeting: "Hi, I'm"
+      greeting: "Welcome"
       show_status: true
       show_scroll_indicator: true
       typewriter:
         enable: true
-        prefix: "I build"
+        prefix: "We provide"
         strings:
-          - "full-stack web apps"
-          - "scalable APIs"
-          - "beautiful UIs"
-          - "open source tools"
+          - "education work-force research"
+          - "school district assessments"
+          - "policy briefs"
         type_speed: 70
         delete_speed: 40
         pause_time: 2500
       cta_buttons:
-        - text: View My Work
+        - text: About 
           url: "#projects"
           icon: arrow-down
-        - text: Get In Touch
+        - text: Contact Us
           url: "#contact"
           icon: envelope
     design:
