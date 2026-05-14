@@ -3,10 +3,9 @@
 #hero div:has(> picture img),
 #hero div:has(> img),
 #hero picture {
-  width: 420px !important;     /* scaled up version of 260 */
-  height: 149px !important;     /* let image control height */
-  max-width: 90vw !important;
-  overflow: hidden !important;
+  width: 420px !important;     
+  height: 149px !important;     
+  flex-shrink: 0 !important;
   border-radius: 0 !important;
 }
 
@@ -14,10 +13,10 @@
 #hero picture img,
 #hero img {
   width: 100% !important;
-  height: auto !important;     /* CRITICAL: prevents distortion */
-  max-width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;  /* 🔑 overrides theme defaults */
+  max-height: none !important;
   object-fit: contain !important;
-  border-radius: 0 !important;
 }
 
 /* Replace the homepage/brand link in the header with logo */
