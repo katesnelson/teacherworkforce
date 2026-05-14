@@ -1,33 +1,33 @@
-/* Expand the hero content column */
-#hero .container,
-#hero .row,
-#hero .col,
-#hero .col-lg-8,
-#hero .mx-auto {
-  max-width: 100% !important;
-  width: 100% !important;
-}
 
+/* Hero logo/avatar container */
 #hero div:has(> picture img),
-#hero div:has(> img),
 #hero picture {
-  width: 420px !important;     
-  height: 149px !important;     
-  flex-shrink: 0 !important;
-
+  width: 420px !important;
+  height: auto !important;
+  max-width: 90vw !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  overflow: visible !important;
   border-radius: 0 !important;
 }
 
-/* Image scales proportionally */
-#hero picture img,
-#hero img {
+/* Hero logo image */
+#hero picture img {
   width: 100% !important;
-  height: 100% !important;
-  max-width: none !important;  /* 🔑 overrides theme defaults */
+  height: auto !important;
+  max-width: none !important;
   max-height: none !important;
   object-fit: contain !important;
-
+  border-radius: 0 !important;
 }
+
+/* Remove circular avatar styling */
+#hero img,
+#hero picture,
+#hero div:has(> picture img) {
+  border-radius: 0 !important;
+}
+
 
 /* Replace the homepage/brand link in the header with logo */
 header a[href="/"],
