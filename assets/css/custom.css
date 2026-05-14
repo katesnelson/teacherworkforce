@@ -4,7 +4,7 @@
 #hero picture {
   width: 420px !important;
   max-width: 90vw !important;
-  height: 260px !important;
+  height: 149px !important;
   overflow: visible !important;
   border-radius: 0 !important;
 }
@@ -14,7 +14,7 @@
 #hero img.avatar,
 #hero .avatar img {
   width: 420px !important;
-  height: 260px !important;          /* key fix */
+  height: 149px !important;          /* key fix */
   max-width: none !important;
   max-height: none !important;
   object-fit: contain !important;
