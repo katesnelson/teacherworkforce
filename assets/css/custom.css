@@ -3,18 +3,18 @@
 #hero div:has(> img),
 #hero picture {
   width: 420px !important;
-  height: 260px !important;
+  height: auto !important;          /* key fix */
   max-width: 90vw !important;
-  overflow: hidden !important;
+  overflow: visible !important;     /* prevent clipping */
   border-radius: 0 !important;
 }
 
-/* Scale image to fit container */
+/* Image scales proportionally */
 #hero picture img,
 #hero img.avatar,
 #hero .avatar img {
   width: 100% !important;
-  height: 100% !important;
+  height: auto !important;          /* key fix */
   max-width: none !important;
   max-height: none !important;
   object-fit: contain !important;
