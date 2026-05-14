@@ -31,3 +31,14 @@
   max-width: 90vw !important;
   height: 260px !important;
 }
+
+/* Replace navbar text name with logo image */
+.navbar-brand {
+  font-size: 0 !important;
+  width: 140px;
+  height: 40px;
+  background-image: url("/media/logo.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+}
