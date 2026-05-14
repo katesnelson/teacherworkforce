@@ -1,22 +1,25 @@
-/* Enlarged hero avatar box */
-/* Hero avatar container */
-#hero div:has(> picture img),
-#hero div:has(> img),
-#hero picture {
-  width: 420px !important;     
-  height: 149px !important;     
-  flex-shrink: 0 !important;
-  border-radius: 0 !important;
+/* Expand the hero content column */
+#hero .container,
+#hero .row,
+#hero .col,
+#hero .col-lg-8,
+#hero .mx-auto {
+  max-width: 100% !important;
+  width: 100% !important;
 }
 
-/* Image scales proportionally */
-#hero picture img,
-#hero img {
+/* Let avatar container grow */
+#hero div:has(> picture img) {
+  width: 420px !important;
+  max-width: none !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Make image fill properly */
+#hero picture img {
   width: 100% !important;
-  height: 100% !important;
-  max-width: none !important;  /* 🔑 overrides theme defaults */
-  max-height: none !important;
-  object-fit: contain !important;
+  height: auto !important;
 }
 
 /* Replace the homepage/brand link in the header with logo */
