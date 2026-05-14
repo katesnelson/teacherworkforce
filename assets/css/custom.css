@@ -1,0 +1,19 @@
+/* Homepage hero avatar: make it large and rectangular */
+#hero img,
+#hero .avatar img,
+#hero [class*="avatar"] img {
+  width: 420px !important;
+  max-width: 90vw !important;
+  height: auto !important;
+  border-radius: 0 !important;
+  object-fit: contain !important;
+}
+
+/* Remove circular avatar wrapper styling */
+#hero .avatar,
+#hero [class*="avatar"] {
+  width: 420px !important;
+  max-width: 90vw !important;
+  height: auto !important;
+  border-radius: 0 !important;
+}
