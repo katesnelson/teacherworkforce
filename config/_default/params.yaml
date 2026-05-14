@@ -15,9 +15,9 @@ hugoblox:
   identity:
     # Site name - shown in navbar, footer, copyright, and browser title by default
     name: "Educator Recruitment, Retention, and Effectiveness"
-    branding:
-      logo:
-        filename: "logo.png"
+  branding:
+    logo:
+      filename: "logo.png"
     # Legal entity for copyright notices (defaults to name if not set)
     organization: ""
     # Schema.org type for structured data
