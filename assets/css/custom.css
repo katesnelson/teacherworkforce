@@ -2,8 +2,8 @@
 /* Hero logo/avatar container */
 
 .avatar {
-  width: 120px; /* Adjust size */
-  height: 120px; /* Keep width/height equal for a circle */
+  width: 420px; /* Adjust size */
+  height: 150px; /* Keep width/height equal for a circle */
 }
 
 #hero div:has(> picture img),
