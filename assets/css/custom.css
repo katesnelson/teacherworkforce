@@ -8,7 +8,9 @@
   width: 100% !important;
 }
 
-hero picture {
+#hero div:has(> picture img),
+#hero div:has(> img),
+#hero picture {
   width: 420px !important;     
   height: 149px !important;     
   flex-shrink: 0 !important;
