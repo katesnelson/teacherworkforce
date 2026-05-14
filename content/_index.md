@@ -45,10 +45,10 @@ sections:
   
   # Filterable Portfolio - Alpine.js powered project filtering
   - block: portfolio
-    id: projects
+    id: reports
     content:
-      title: "Featured Projects"
-      subtitle: "A selection of my recent work"
+      title: "Recent Reports"
+      subtitle: "Recent ERRE reports."
       count: 0
       filters:
         folders:
@@ -79,7 +79,7 @@ sections:
   
   # Visual Tech Stack - Icons organized by category
   - block: tech-stack
-    id: skills
+    id: team
     content:
       title: "Tech Stack"
       subtitle: "Technologies I use to build things"
@@ -136,7 +136,7 @@ sections:
   
   # Experience Timeline
   - block: resume-experience
-    id: experience
+    id: about
     content:
       title: Experience
       date_format: Jan 2006
@@ -188,7 +188,7 @@ sections:
   
   # Recent Blog Posts
   - block: collection
-    id: blog
+    id: briefs
     content:
       title: Recent Posts
       subtitle: 'Thoughts on web development, tech, and more'
