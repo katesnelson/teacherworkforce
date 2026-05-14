@@ -3,7 +3,7 @@
 #hero div:has(> picture img),
 #hero picture {
   width: 420px !important;
-  height: auto !important;
+  height: 150px !important;
   max-width: 90vw !important;
   margin-left: auto !important;
   margin-right: auto !important;
