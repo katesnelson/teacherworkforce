@@ -9,19 +9,14 @@
   border-radius: 0 !important;
 }
 
-/* Force the actual image to scale with the enlarged box */
-#hero picture > img,
-#hero div:has(> picture img) img,
-#hero div:has(> img) > img {
-  display: block !important;
+/* Image scales proportionally */
+#hero picture img,
+#hero img.avatar,
+#hero .avatar img {
   width: 100% !important;
-  min-width: 100% !important;
-  max-width: 100% !important;
-
-  height: auto !important;
-  min-height: auto !important;
+  height: auto !important;          /* key fix */
+  max-width: none !important;
   max-height: none !important;
-
   object-fit: contain !important;
   border-radius: 0 !important;
 }
