@@ -21,17 +21,13 @@
   border-radius: 0 !important;
 }
 
-#hero img {
-  width: 420px !important;
-  max-width: 90vw !important;
-  height: 260px !important;
-}
-
-/* Replace navbar text name with logo image */
-.navbar-brand {
+/* Replace the homepage/brand link in the header with logo */
+header a[href="/"],
+nav a[href="/"] {
   font-size: 0 !important;
-  width: 140px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
   background-image: url("/media/logo.png");
   background-repeat: no-repeat;
   background-position: left center;
