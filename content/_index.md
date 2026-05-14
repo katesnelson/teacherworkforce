@@ -34,7 +34,7 @@ sections:
     design:
       style: centered
       avatar_shape: square
-    avatar_size: lg
+      avatar_size: lg
       animations: true
       background:
         color:
