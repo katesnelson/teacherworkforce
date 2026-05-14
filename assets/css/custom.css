@@ -1,22 +1,27 @@
-/* Hero avatar container */
+/* Enlarged hero avatar box */
 #hero div:has(> picture img),
 #hero div:has(> img),
 #hero picture {
   width: 420px !important;
-  height: 260px !important;
   max-width: 90vw !important;
-  overflow: hidden !important;
+  height: auto !important;
+  overflow: visible !important;
   border-radius: 0 !important;
 }
 
-/* Scale image to fit container */
-#hero picture img,
-#hero img.avatar,
-#hero .avatar img {
+/* Force the actual image to scale with the enlarged box */
+#hero picture > img,
+#hero div:has(> picture img) img,
+#hero div:has(> img) > img {
+  display: block !important;
   width: 100% !important;
-  height: 100% !important;
-  max-width: none !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+
+  height: auto !important;
+  min-height: auto !important;
   max-height: none !important;
-  object-fit: cover !important;
+
+  object-fit: contain !important;
   border-radius: 0 !important;
 }
