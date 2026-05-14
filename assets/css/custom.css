@@ -8,18 +8,23 @@
   width: 100% !important;
 }
 
-/* Let avatar container grow */
-#hero div:has(> picture img) {
-  width: 420px !important;
-  max-width: none !important;
-  margin-left: auto;
-  margin-right: auto;
+hero picture {
+  width: 420px !important;     
+  height: 149px !important;     
+  flex-shrink: 0 !important;
+
+  border-radius: 0 !important;
 }
 
-/* Make image fill properly */
-#hero picture img {
+/* Image scales proportionally */
+#hero picture img,
+#hero img {
   width: 100% !important;
-  height: auto !important;
+  height: 100% !important;
+  max-width: none !important;  /* 🔑 overrides theme defaults */
+  max-height: none !important;
+  object-fit: contain !important;
+
 }
 
 /* Replace the homepage/brand link in the header with logo */
