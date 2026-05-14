@@ -1,22 +1,21 @@
 /* Enlarged hero avatar box */
+/* Hero avatar container */
 #hero div:has(> picture img),
 #hero div:has(> img),
 #hero picture {
-  width: 420px !important;
+  width: 420px !important;     /* scaled up version of 260 */
+  height: auto !important;     /* let image control height */
   max-width: 90vw !important;
-  height: 149px !important;
-  overflow: visible !important;
+  overflow: hidden !important;
   border-radius: 0 !important;
 }
 
 /* Image scales proportionally */
 #hero picture img,
-#hero img.avatar,
-#hero .avatar img {
-  width: 420px !important;
-  height: 149px !important;          /* key fix */
-  max-width: none !important;
-  max-height: none !important;
+#hero img {
+  width: 100% !important;
+  height: auto !important;     /* CRITICAL: prevents distortion */
+  max-width: 100% !important;
   object-fit: contain !important;
   border-radius: 0 !important;
 }
