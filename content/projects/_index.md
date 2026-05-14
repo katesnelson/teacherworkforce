@@ -1,5 +1,5 @@
 ---
-title: 'Projects'
+title: 'Reports'
 date: 2024-05-19
 type: landing
 
@@ -7,8 +7,8 @@ type: landing
 sections:
   - block: collection
     content:
-      title: Selected Projects
-      text: I enjoy making things. Here are a selection of projects that I have worked on over the years.
+      title: Reports
+      text: Recent ERRE reports.
       filters:
         folders:
           - projects
