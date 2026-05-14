@@ -2,26 +2,22 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: Alex Johnson
-  given: Alex
-  family: Johnson
+  display: Educator Recruitment, Retention, and Effectiveness
+  given: 
+  family: 
 postnominals: []
-status:
-  icon: "💻"  # Emoji shown on avatar badge: 💻 developer, 🎨 designer, 🚀 startup, 🔬 researcher, 🎓 student
-role: Full-Stack Developer
-email: alex@example.com
+email: erre@missouri.edu
 bio: |
-  Full-stack developer with 5+ years of experience building scalable web applications.
-  Passionate about modern JavaScript, cloud architecture, and creating delightful user experiences.
+  The Educator Recruitment, Retention, and Effectiveness center is dedicated to blah blah blah
 
 affiliations:
-  - name: Tech Corp
-    url: https://techcorp.example.com
+  - name: University of Missouri
+    url: https://missouri.edu
 
 links:
   - icon: at-symbol
-    url: mailto:alex@example.com
-    label: E-mail Me
+    url: mailto:erre@missouri.edu
+    label: Contact Us
   - icon: brands/github
     url: https://github.com/alexjohnson
   - icon: brands/linkedin
@@ -98,3 +94,4 @@ languages:
     label: Native
 
 awards: []
+
