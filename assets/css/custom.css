@@ -15,7 +15,7 @@
 /* Hero logo image */
 #hero picture img {
   width: 420px !important;
-  height: auto !important;
+  height: 150px !important;
   max-width: none !important;
   max-height: none !important;
   object-fit: contain !important;
