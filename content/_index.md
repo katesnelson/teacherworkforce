@@ -33,7 +33,8 @@ sections:
           icon: envelope
     design:
       style: centered
-      avatar_shape: circle
+      avatar_shape: square
+    avatar_size: lg
       animations: true
       background:
         color:
