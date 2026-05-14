@@ -7,6 +7,8 @@
 hugoblox:
   schema: "2.0"
 
+custom_css:
+      - css/custom.css
   # ────────────────────────────────────────────────────────────────────────────
   # IDENTITY
   # Site-level branding (for people/profiles, use the author system in content/authors/)
@@ -53,8 +55,7 @@ hugoblox:
       footer:
         background: ""
         foreground: ""
-  custom_css:
-        - css/custom.css
+
   # ────────────────────────────────────────────────────────────────────────────
   # TYPOGRAPHY
   # Font and text sizing
