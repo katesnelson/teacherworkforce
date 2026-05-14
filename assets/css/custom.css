@@ -4,7 +4,7 @@
 #hero picture {
   width: 420px !important;
   max-width: 90vw !important;
-  height: auto !important;
+  height: 260px !important;
   overflow: visible !important;
   border-radius: 0 !important;
 }
@@ -24,4 +24,10 @@
 
   object-fit: contain !important;
   border-radius: 0 !important;
+}
+
+#hero img {
+  width: 100% !important;
+  max-width: 420px !important;
+  height: auto !important;
 }
