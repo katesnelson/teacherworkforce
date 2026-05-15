@@ -2,8 +2,8 @@
 #hero div:has(> picture img),
 #hero div:has(> img),
 #hero picture {
-  width: 420px !important;
-  height: auto !important;
+  width: 460px !important;
+  height: 149 !important;
   max-width: 90vw !important;
   max-height: none !important;
   overflow: visible !important;
