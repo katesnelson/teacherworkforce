@@ -1,29 +1,30 @@
-/* Enlarge only the hero avatar wrapper */
+/* Larger rectangular hero avatar wrapper */
 #hero div:has(> picture img),
 #hero div:has(> img),
 #hero picture {
   width: 420px !important;
-  height: 149 !important;
+  height: 149px !important;
   max-width: 90vw !important;
   max-height: none !important;
   overflow: visible !important;
   border-radius: 0 !important;
+
+  background-image: url("/media/me.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
 }
 
-/* Keep the image at its natural size */
+/* Hide the theme-generated/cropped avatar image */
 #hero picture img,
 #hero img.avatar,
 #hero .avatar img {
+  opacity: 0 !important;
   width: 420px !important;
   height: 149px !important;
   max-width: none !important;
   max-height: none !important;
-  object-fit: contain !important;
   border-radius: 0 !important;
-  border-radius: 0 !important;
-  display: block !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
 }
 
 
