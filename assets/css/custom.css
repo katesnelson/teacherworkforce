@@ -2,7 +2,7 @@
 #hero div:has(> picture img),
 #hero div:has(> img),
 #hero picture {
-  width: 460px !important;
+  width: 420px !important;
   height: 149 !important;
   max-width: 90vw !important;
   max-height: none !important;
@@ -14,12 +14,16 @@
 #hero picture img,
 #hero img.avatar,
 #hero .avatar img {
-  width: 460px !important;
+  width: 420px !important;
   height: 149px !important;
   max-width: none !important;
   max-height: none !important;
   object-fit: contain !important;
   border-radius: 0 !important;
+  border-radius: 0 !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 
