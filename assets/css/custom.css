@@ -1,38 +1,24 @@
-
-/* Hero logo/avatar container */
-
-.avatar {
-  width: 420px; /* Adjust size */
-  height: 150px; /* Keep width/height equal for a circle */
-}
-
+/* Enlarge only the hero avatar wrapper */
 #hero div:has(> picture img),
+#hero div:has(> img),
 #hero picture {
   width: 420px !important;
-  height: 150px !important;
+  height: auto !important;
   max-width: 90vw !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  max-height: none !important;
   overflow: visible !important;
   border-radius: 0 !important;
-  flex-shrink: 0 !important;
 }
 
-/* Hero logo image */
-#hero picture img {
+/* Enlarge only the hero avatar image */
+#hero picture img,
+#hero img.avatar,
+#hero .avatar img {
   width: 420px !important;
-  height: 150px !important;
-  max-width: none !important;
+  height: auto !important;
+  max-width: 90vw !important;
   max-height: none !important;
   object-fit: contain !important;
-  border-radius: 0 !important;
-  flex-shrink: 0 !important;
-}
-
-/* Remove circular avatar styling */
-#hero img,
-#hero picture,
-#hero div:has(> picture img) {
   border-radius: 0 !important;
 }
 
