@@ -10,13 +10,13 @@
   border-radius: 0 !important;
 }
 
-/* Enlarge only the hero avatar image */
+/* Keep the image at its natural size */
 #hero picture img,
 #hero img.avatar,
 #hero .avatar img {
-  width: 420px !important;
+  width: auto !important;
   height: auto !important;
-  max-width: 90vw !important;
+  max-width: none !important;
   max-height: none !important;
   object-fit: contain !important;
   border-radius: 0 !important;
