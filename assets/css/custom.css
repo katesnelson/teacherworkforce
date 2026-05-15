@@ -9,7 +9,7 @@
   overflow: visible !important;
   border-radius: 0 !important;
 
-  background-image: url("static/media/me.png");
+  background-image: url("/media/me.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -19,6 +19,7 @@
 #hero picture img,
 #hero img.avatar,
 #hero .avatar img {
+  visibility: hidden !important;
   opacity: 0 !important;
   width: 420px !important;
   height: 149px !important;
