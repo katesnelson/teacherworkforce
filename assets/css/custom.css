@@ -9,7 +9,7 @@
   width: 420px !important;
   height: 149px !important;
 
-  background-image: url("/media/me.png") !important;
+  background-image: url("../media/me.png") !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
   background-size: contain !important;
