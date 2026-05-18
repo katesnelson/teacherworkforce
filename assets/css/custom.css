@@ -1,31 +1,18 @@
 /* Larger rectangular hero avatar wrapper */
-#hero div:has(> picture img),
-#hero div:has(> img),
-#hero picture {
-  width: 420px !important;
-  height: 149px !important;
-  max-width: 90vw !important;
-  max-height: none !important;
-  overflow: visible !important;
-  border-radius: 0 !important;
-
-  background-image: url("/media/me.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
+.hero-avatar-wrapper {
+  width: 420px;
+  height: auto;
+  max-width: 90vw;
+  border-radius: 0;
+  overflow: visible;
 }
 
-/* Hide the theme-generated/cropped avatar image */
-#hero picture img,
-#hero img.avatar,
-#hero .avatar img {
-  visibility: hidden !important;
-  opacity: 0 !important;
-  width: 420px !important;
-  height: 149px !important;
-  max-width: 90vw !important;
-  max-height: none !important;
-  border-radius: 0 !important;
+.hero-avatar-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0;
 }
 
 
