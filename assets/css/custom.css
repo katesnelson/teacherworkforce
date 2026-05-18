@@ -1,31 +1,22 @@
 /* Override Hugo Blox dev-hero avatar sizing */
-/* Hero avatar wrapper */
-#hero .overflow-hidden.ring-4 {
-  width: 420px !important;
-  height: auto !important;
-  max-width: 90vw !important;
-
-  border-radius: 0 !important;
-
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-
-  overflow: hidden !important;
+/* Hide the actual Hugo avatar image entirely */
+#hero .overflow-hidden.ring-4 img {
+  display: none !important;
 }
 
-/* Hero avatar image */
-#hero .overflow-hidden.ring-4 img {
-  width: auto !important;
-  height: auto !important;
+/* Replace avatar area with your real logo image */
+#hero .overflow-hidden.ring-4 {
+  width: 420px !important;
+  height: 149px !important;
 
-  max-width: 100% !important;
-  max-height: 100% !important;
-
-  object-fit: contain !important;
-  object-position: center center !important;
+  background-image: url("/media/me.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: contain !important;
 
   border-radius: 0 !important;
+
+  overflow: hidden !important;
 }
 
 /* Force the hero avatar image to stop cropping */
