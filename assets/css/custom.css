@@ -1,6 +1,6 @@
 /* Override Hugo Blox dev-hero avatar sizing */
-#hero .w-32.h-32,
-#hero .md\:w-40.md\:h-40 {
+/* Hero avatar wrapper */
+#hero .overflow-hidden.ring-4 {
   width: 420px !important;
   height: 149px !important;
   max-width: 90vw !important;
@@ -8,9 +8,8 @@
   overflow: visible !important;
 }
 
-/* Override image scaling */
-#hero .w-32.h-32 img,
-#hero .md\:w-40.md\:h-40 img {
+/* Hero avatar image */
+#hero .overflow-hidden.ring-4 img {
   width: 420px !important;
   height: 149px !important;
   object-fit: contain !important;
