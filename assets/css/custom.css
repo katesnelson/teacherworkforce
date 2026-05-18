@@ -1,20 +1,21 @@
-/* Larger rectangular hero avatar wrapper */
-.hero-avatar-wrapper {
-  width: 420px;
-  height: auto;
-  max-width: 90vw;
-  border-radius: 0;
-  overflow: visible;
+/* Override Hugo Blox dev-hero avatar sizing */
+#hero .w-32.h-32,
+#hero .md\:w-40.md\:h-40 {
+  width: 420px !important;
+  height: 149px !important;
+  max-width: 90vw !important;
+  border-radius: 0 !important;
+  overflow: visible !important;
 }
 
-.hero-avatar-image {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 0;
+/* Override image scaling */
+#hero .w-32.h-32 img,
+#hero .md\:w-40.md\:h-40 img {
+  width: 420px !important;
+  height: 149px !important;
+  object-fit: contain !important;
+  border-radius: 0 !important;
 }
-
 
 /* Replace the homepage/brand link in the header with logo */
 header a[href="/"],
