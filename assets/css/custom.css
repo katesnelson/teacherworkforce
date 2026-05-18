@@ -16,6 +16,18 @@
   border-radius: 0 !important;
 }
 
+/* Force the hero avatar image to stop cropping */
+#hero img {
+  object-fit: contain !important;
+  object-position: center center !important;
+
+  width: 420px !important;
+  height: 149px !important;
+
+  max-width: none !important;
+  max-height: none !important;
+}
+
 /* Replace the homepage/brand link in the header with logo */
 header a[href="/"],
 nav a[href="/"] {
