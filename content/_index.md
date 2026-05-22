@@ -80,7 +80,7 @@ sections:
         padding: ["4rem", "0", "4rem", "0"]
   
   # Visual Tech Stack - Icons organized by category
-  - block: tech-stack
+  - block: people
     id: team
     content:
       title: "Tech Stack"
