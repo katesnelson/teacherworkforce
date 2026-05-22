@@ -18,9 +18,11 @@ sections:
         enable: true
         prefix: "We provide"
         strings:
-          - "education work-force research"
-          - "school district assessments"
-          - "policy briefs"
+          - "rigorous analysis of teacher evaluation systems across Missouri."
+          - "timely research on critical teacher labor market issues."
+          - "state and district leaders with evidence-based policy focus areas and solutions."
+          - "a statewide educator survey instrument to measure teacher working conditions and intentions."
+          - "accessible reports and briefs that translate complex educator data into actionable insights."
         type_speed: 70
         delete_speed: 40
         pause_time: 2500
