@@ -79,63 +79,37 @@ sections:
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
   
-  # Visual Tech Stack - Icons organized by category
-  - block: people
-    id: team
+  # Team Showcase - People organized by role
+  sections:
+  - block: team-showcase
     content:
-      title: "Tech Stack"
-      subtitle: "Technologies I use to build things"
-      categories:
-        - name: Languages
-          items:
-            - name: TypeScript
-              icon: devicon/typescript
-            - name: JavaScript
-              icon: devicon/javascript
-            - name: Python
-              icon: devicon/python
-            - name: Go
-              icon: devicon/go
-        - name: Frontend
-          items:
-            - name: React
-              icon: devicon/react
-            - name: Next.js
-              icon: devicon/nextjs
-            - name: Tailwind CSS
-              icon: devicon/tailwindcss
-            - name: Alpine.js
-              icon: devicon/alpinejs
-        - name: Backend
-          items:
-            - name: Node.js
-              icon: devicon/nodejs
-            - name: Express
-              icon: devicon/express
-            - name: PostgreSQL
-              icon: devicon/postgresql
-            - name: Redis
-              icon: devicon/redis
-        - name: DevOps
-          items:
-            - name: Docker
-              icon: devicon/docker
-            - name: AWS
-              icon: devicon/amazonwebservices
-            - name: GitHub Actions
-              icon: brands/github
-            - name: Vercel
-              icon: devicon/vercel
+      title: Meet Our Team
+      subtitle: World-class researchers advancing science
+      text: Our diverse team brings together expertise from multiple disciplines.
+      user_groups:
+        - Leadership
+        - Researchers
+        - Collaborators
+          sort_by: weight
+          sort_ascending: false
+      sort_by: 'graduation_year' # legacy 'Params.' prefix optional
+      sort_ascending: false
+      cta:
+        text: Join Our Team
+        url: /opportunities
+        icon: user-plus
     design:
-      style: grid
-      show_levels: false
-      background:
-        color:
-          light: "#f5f5f5"
-          dark: "#08080c"
-      spacing:
-        padding: ["4rem", "0", "4rem", "0"]
-  
+      show_role: true
+      show_organizations: true
+      show_interests: true
+      max_interests: 3   # set 0 to hide interests even if provided
+      align: center      # or "left" to align header + CTA left
+      max_columns: 4     # 2, 3, or 4
+      show_social: true
+      show_empty_groups: false # show a placeholder when a group has no members
+      # Section background color (CSS class)
+      css_class: "bg-gray-50 dark:bg-gray-900"
+    
   # Experience Timeline
   - block: resume-experience
     id: about
