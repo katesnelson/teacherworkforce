@@ -1,7 +1,7 @@
 # data/authors/jane-doe.yaml
 name:
   display: Dr. Jane Doe
-role: Postdoctoral Researcher
+role: Researcher
 bio: Research interests include machine learning and computational biology.
 interests:
   - Machine Learning
