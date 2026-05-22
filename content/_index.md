@@ -80,7 +80,6 @@ sections:
         padding: ["4rem", "0", "4rem", "0"]
   
   # Team Showcase - People organized by role
-  sections:
   - block: team-showcase
     content:
       title: Meet Our Team
