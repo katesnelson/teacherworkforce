@@ -89,9 +89,7 @@ sections:
         - Leadership
         - Researchers
         - Collaborators
-          sort_by: weight
-          sort_ascending: false
-      sort_by: 'graduation_year' # legacy 'Params.' prefix optional
+      sort_by: weight
       sort_ascending: false
       cta:
         text: Join Our Team
