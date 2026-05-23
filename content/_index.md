@@ -44,70 +44,9 @@ sections:
           dark: "#0a0a0f"
       spacing:
         padding: ["6rem", "0", "4rem", "0"]
-  
-  # Filterable Portfolio - Alpine.js powered project filtering
-  - block: portfolio
-    id: reports
-    content:
-      title: "Recent Reports"
-      subtitle: "Recent ERRE reports."
-      count: 0
-      filters:
-        folders:
-          - projects
-      buttons:
-        - name: All
-          tag: '*'
-        - name: Full-Stack
-          tag: Full-Stack
-        - name: Frontend
-          tag: Frontend
-        - name: Backend
-          tag: Backend
-      default_button_index: 0
-      # Archive link auto-shown if more projects exist than 'count' above
-      # archive:
-      #   enable: false  # Set to false to explicitly hide
-      #   text: "Browse All"  # Customize text
-      #   link: "/work/"  # Custom URL
-    design:
-      columns: 3
-      background:
-        color:
-          light: "#ffffff"
-          dark: "#0d0d12"
-      spacing:
-        padding: ["4rem", "0", "4rem", "0"]
-  
-  # Team Showcase - People organized by role
-  - block: team-showcase
-    content:
-      title: Meet Our Team
-      subtitle: World-class researchers advancing science
-      text: Our diverse team brings together expertise from multiple disciplines.
-      user_groups:
-        - Leadership
-        - Researchers
-        - Collaborators
-      sort_by: weight
-      sort_ascending: false
-      cta:
-        text: Join Our Team
-        url: /opportunities
-        icon: user-plus
-    design:
-      show_role: true
-      show_organizations: true
-      show_interests: true
-      max_interests: 3   # set 0 to hide interests even if provided
-      align: center      # or "left" to align header + CTA left
-      max_columns: 4     # 2, 3, or 4
-      show_social: true
-      show_empty_groups: false # show a placeholder when a group has no members
-      # Section background color (CSS class)
-      css_class: "bg-gray-50 dark:bg-gray-900"
-    
-  # Experience Timeline
+
+
+# Experience Timeline
   - block: resume-experience
     id: about
     content:
@@ -158,7 +97,73 @@ sections:
           dark: "#0d0d12"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
+
+    
+  # Team Showcase - People organized by role
+  - block: team-showcase
+    content:
+      title: Meet Our Team
+      subtitle: World-class researchers advancing science
+      text: Our diverse team brings together expertise from multiple disciplines.
+      user_groups:
+        - Leadership
+        - Researchers
+        - Collaborators
+      sort_by: weight
+      sort_ascending: false
+      cta:
+        text: Join Our Team
+        url: /opportunities
+        icon: user-plus
+    design:
+      show_role: true
+      show_organizations: true
+      show_interests: true
+      max_interests: 3   # set 0 to hide interests even if provided
+      align: center      # or "left" to align header + CTA left
+      max_columns: 4     # 2, 3, or 4
+      show_social: true
+      show_empty_groups: false # show a placeholder when a group has no members
+      # Section background color (CSS class)
+      css_class: "bg-gray-50 dark:bg-gray-900"
+
+    
+  # Filterable Portfolio - Alpine.js powered project filtering
+  - block: portfolio
+    id: reports
+    content:
+      title: "Recent Reports"
+      subtitle: "Recent ERRE reports."
+      count: 0
+      filters:
+        folders:
+          - projects
+      buttons:
+        - name: All
+          tag: '*'
+        - name: Full-Stack
+          tag: Full-Stack
+        - name: Frontend
+          tag: Frontend
+        - name: Backend
+          tag: Backend
+      default_button_index: 0
+      # Archive link auto-shown if more projects exist than 'count' above
+      # archive:
+      #   enable: false  # Set to false to explicitly hide
+      #   text: "Browse All"  # Customize text
+      #   link: "/work/"  # Custom URL
+    design:
+      columns: 3
+      background:
+        color:
+          light: "#ffffff"
+          dark: "#0d0d12"
+      spacing:
+        padding: ["4rem", "0", "4rem", "0"]
   
+  
+      
   # Recent Blog Posts
   - block: collection
     id: briefs
