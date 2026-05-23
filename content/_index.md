@@ -101,6 +101,7 @@ sections:
     
   # Team Showcase - People organized by role
   - block: team-showcase
+    id: team
     content:
       title: Meet Our Team
       subtitle: World-class researchers advancing science
