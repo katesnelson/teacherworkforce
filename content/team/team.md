@@ -17,8 +17,8 @@ content:
   #   Edit `user_groups` in each user's profile to add them to one or more of these groups.
   user_groups:
   - Leadership
-  - Researcher
-  - Collaborator
+  - Researchers
+  - Collaborators
 design:
   show_interests: false
   show_role: true
