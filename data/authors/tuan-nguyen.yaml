@@ -1,4 +1,10 @@
++++
+slug = 'tuan-nguyen'
+title = 'My First Post'
++++
+
 # data/authors/tuan-nguyen.yaml
+
 name:
   display: Tuan D. Nguyen, Ph.D.
 role: Leadership
