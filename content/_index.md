@@ -114,7 +114,7 @@ sections:
       sort_ascending: false
       cta:
         text: Join Our Team
-        url: /opportunities
+        url: "#team"
         icon: user-plus
     design:
       show_role: true
