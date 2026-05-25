@@ -7,7 +7,7 @@ type: landing
 sections:
   - block: collection
     content:
-      title:Team
+      title: Team
       text: Meet our team
       filters:
         folders:
