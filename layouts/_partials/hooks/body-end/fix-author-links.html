@@ -4,7 +4,7 @@
      unaffected. */}}
 <script>
 (function () {
-  var basePath = {{ "" | relURL | jsonify }};
+  var basePath = {{ "" | relURL | jsonify | safeJS }};
   if (!basePath || basePath === "/") return;
   var prefix = basePath.replace(/\/$/, "");
   document.addEventListener("DOMContentLoaded", function () {
@@ -17,3 +17,4 @@
   });
 })();
 </script>
+
