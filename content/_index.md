@@ -28,7 +28,7 @@ sections:
         pause_time: 2500
       cta_buttons:
         - text: About 
-          url: "#projects"
+          url: "#about"
           icon: arrow-down
         - text: Contact Us
           url: "#contact"
@@ -52,7 +52,9 @@ sections:
     content:
       title: What the ERRE Center Does
       text: |-
-        The Educator Recruitment, Retention, and Effectiveness (ERRE) Center, supported by the Walton Family Foundation and the University of Missouri, conducts research on the educator workforce to inform state and district policy. Working in partnership with Missouri Department of Elementary and Secondary Education (DESE) and the Department of Higher Education and Workforce Development (DHEWD), the ERRE Center collects and analyzes educator data, studies educator labor market dynamics, and develops tools to assess teacher working conditions. The Center's work spans three main areas: examining teacher evaluation systems across districts, researching teacher shortages and mobility, and designing a statewide educator survey to capture teacher working conditions and retention intentions. Findings are translated into reports, briefs, and policy recommendations aimed at improving teacher recruitment, retention, and effectiveness across Missouri and the nation.
+        The Educator Recruitment, Retention, and Effectiveness (ERRE) Center, supported by the [Walton Family Foundation](https://www.waltonfamilyfoundation.org/) and the [University of Missouri](https://missouri.edu/), conducts research on the educator workforce to inform state and district policy. Working in partnership with [Missouri Department of Elementary and Secondary Education (DESE)](https://dese.mo.gov/) and the [Department of Higher Education and Workforce Development (DHEWD)](https://dhewd.mo.gov/), the ERRE Center collects and analyzes educator data, studies educator labor market dynamics, and develops tools to assess teacher working conditions.
+
+        The Center's work spans three main areas: examining teacher evaluation systems across districts, researching teacher shortages and mobility, and designing a statewide educator survey to capture teacher working conditions and retention intentions. Findings are translated into reports, briefs, and policy recommendations aimed at improving teacher recruitment, retention, and effectiveness across Missouri and the nation.
     design:
       background:
         color:
@@ -165,28 +167,4 @@ sections:
           dark: "#0d0d12"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-  
-  # CTA Card
-  - block: cta-card
-    content:
-      title: "Open to Opportunities"
-      text: |-
-        I'm currently looking for **senior engineering** or **tech lead** roles.
-        
-        Let's connect and discuss how I can help your team.
-      button:
-        text: 'Download Resume'
-        url: uploads/resume.pdf
-        new_tab: true
-    design:
-      card:
-        # Light mode: soft pastel theme gradient | Dark mode: rich deep gradient
-        css_class: 'bg-gradient-to-br from-primary-200 via-primary-100 to-secondary-200 dark:from-primary-600 dark:via-primary-700 dark:to-secondary-700'
-        text_color: dark
-      background:
-        color:
-          light: "#f5f5f5"
-          dark: "#08080c"
-      spacing:
-        padding: ["4rem", "0", "6rem", "0"]
 ---
