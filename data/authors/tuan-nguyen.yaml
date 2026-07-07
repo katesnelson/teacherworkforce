@@ -1,30 +1,39 @@
-+++
-slug = 'tuan-nguyen'
-title = 'My First Post'
-+++
-
-# data/authors/tuan-nguyen.yaml
-
+schema: hugoblox/author/v1
+slug: tuan-nguyen
+is_owner: false
 name:
   display: Tuan D. Nguyen, Ph.D.
-role: Leadership
-bio: Mizzou Forward Associate Professor in the Department of Educational Leadership and Policy Analysis at the University of Missouri. He serves as Principal Investigator of the Educator Recruitment, Retention, and Effectiveness Center. 
+  given: Tuan
+  family: Nguyen
+postnominals: []
+email: tuan.nguyen@missouri.edu
+bio: |
+  Mizzou Forward Associate Professor in the Department of Educational Leadership and Policy Analysis
+  at the University of Missouri. He serves as Principal Investigator of the Educator Recruitment,
+  Retention, and Effectiveness Center.
+
+affiliations:
+  - name: University of Missouri
+    url: https://missouri.edu
+
+links:
+  - icon: at-symbol
+    url: 'mailto:tuan.nguyen@missouri.edu'
+    label: Contact
+
 interests:
   - Education policy
   - Economics of education
   - Teacher labor markets
   - Rural education
   - STEM and special education
-affiliations:
-  - name: University of Missouri
-    url: https://example.edu
-links:
-  - icon: envelope
-    url: 'mailto:jane@example.edu'
-  - icon: twitter
-    url: https://x.com/janedoe
-  - icon: github
-    url: https://github.com/janedoe
-user_groups:
-  - Researchers
 
+education: []
+
+experience: []
+
+skills: []
+
+languages: []
+
+awards: []
