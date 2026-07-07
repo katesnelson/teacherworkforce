@@ -46,51 +46,14 @@ sections:
         padding: ["6rem", "0", "4rem", "0"]
 
 
-# Experience Timeline
-  - block: resume-experience
+# About
+  - block: markdown
     id: about
     content:
-      title: Experience
-      date_format: Jan 2006
-      items:
-        - title: Senior Software Engineer
-          company: Tech Corp
-          company_url: ''
-          company_logo: ''
-          location: San Francisco, CA
-          date_start: '2023-01-01'
-          date_end: ''
-          description: |2-
-            * Lead development of microservices architecture serving 1M+ users
-            * Improved API response time by 40% through optimization
-            * Mentored team of 5 junior developers
-            * Tech stack: React, Node.js, PostgreSQL, AWS
-        - title: Full-Stack Developer
-          company: Startup Inc
-          company_url: ''
-          company_logo: ''
-          location: Remote
-          date_start: '2021-06-01'
-          date_end: '2022-12-31'
-          description: |2-
-            * Built and deployed 3 production applications from scratch
-            * Implemented CI/CD pipeline reducing deployment time by 60%
-            * Collaborated with design team on UI/UX improvements
-            * Tech stack: Next.js, Express, MongoDB, Docker
-        - title: Junior Developer
-          company: Web Agency
-          company_url: ''
-          company_logo: ''
-          location: New York, NY
-          date_start: '2020-01-01'
-          date_end: '2021-05-31'
-          description: |2-
-            * Developed client websites using modern web technologies
-            * Maintained and updated legacy codebases
-            * Participated in code reviews and agile ceremonies
-            * Tech stack: React, WordPress, PHP, MySQL
+      title: What the ERRE Center Does
+      text: |-
+        The Educator Recruitment, Retention, and Effectiveness (ERRE) Center, supported by the Walton Family Foundation and the University of Missouri, conducts research on the educator workforce to inform state and district policy. Working in partnership with Missouri Department of Elementary and Secondary Education (DESE) and the Department of Higher Education and Workforce Development (DHEWD), the ERRE Center collects and analyzes educator data, studies educator labor market dynamics, and develops tools to assess teacher working conditions. The Center's work spans three main areas: examining teacher evaluation systems across districts, researching teacher shortages and mobility, and designing a statewide educator survey to capture teacher working conditions and retention intentions. Findings are translated into reports, briefs, and policy recommendations aimed at improving teacher recruitment, retention, and effectiveness across Missouri and the nation.
     design:
-      columns: '1'
       background:
         color:
           light: "#ffffff"
@@ -112,10 +75,6 @@ sections:
         - Collaborators
       sort_by: weight
       sort_ascending: false
-      cta:
-        text: Join Our Team
-        url: "#team"
-        icon: user-plus
     design:
       show_role: true
       show_organizations: true
@@ -195,9 +154,8 @@ sections:
       title: Get In Touch
       subtitle: "Let's build something amazing together"
       text: |-
-        I'm always interested in hearing about new projects and opportunities.
-        Whether you're looking to hire, collaborate, or just want to say hi, feel free to reach out!
-      email: alex@example.com
+        We are always interested in hearing about new projects and opportunities.
+      email: tuan.nguyen@missouri.edu
       autolink: true
     design:
       columns: '1'
