@@ -21,6 +21,9 @@ links:
     url: 'mailto:tuan.nguyen@missouri.edu'
     label: Contact
 
+user_groups:
+  - Researchers
+
 interests:
   - Education policy
   - Economics of education
