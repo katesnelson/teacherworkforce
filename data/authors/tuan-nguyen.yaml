@@ -29,10 +29,7 @@ affiliations:
   - name: University of Missouri
     url: https://missouri.edu
 
-links:
-  - icon: at-symbol
-    url: 'mailto:tuan.nguyen@missouri.edu'
-    label: Contact
+links: []
 
 user_groups:
   - Leadership

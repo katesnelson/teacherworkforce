@@ -113,6 +113,8 @@ hugoblox:
     language_switcher: true
     # Custom footer text (HTML supported)
     text: ""
+    # Hide social media icons in the footer
+    show_social: false
 
   # ────────────────────────────────────────────────────────────────────────────
   # COPYRIGHT

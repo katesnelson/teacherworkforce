@@ -18,11 +18,11 @@ sections:
         enable: true
         prefix: "We provide"
         strings:
-          - "rigorous analysis of teacher evaluation systems across Missouri."
-          - "timely research on critical teacher labor market issues."
-          - "state and district leaders with evidence-based policy focus areas and solutions."
-          - "a statewide educator survey instrument to measure teacher working conditions and intentions."
-          - "accessible reports and briefs that translate complex educator data into actionable insights."
+          - "analysis of Missouri's teacher evaluation systems."
+          - "research on teacher labor markets."
+          - "policy guidance for state and district leaders."
+          - "a statewide teacher working conditions survey."
+          - "clear insights from educator data."
         type_speed: 70
         delete_speed: 40
         pause_time: 2500
@@ -69,8 +69,8 @@ sections:
     id: team
     content:
       title: Meet Our Team
-      subtitle: World-class researchers advancing science
-      text: Our diverse team brings together expertise from multiple disciplines.
+      subtitle: Research that shapes teacher policy in Missouri
+      text: Our team brings expertise in education policy, labor economics, and rigorous quantitative methods.
       user_groups:
         - Leadership
         - Researchers
@@ -84,7 +84,7 @@ sections:
       max_interests: 3   # set 0 to hide interests even if provided
       align: center      # or "left" to align header + CTA left
       max_columns: 4     # 2, 3, or 4
-      show_social: true
+      show_social: false
       show_empty_groups: false # show a placeholder when a group has no members
       # Section background color (CSS class)
       css_class: "bg-gray-50 dark:bg-gray-900"
@@ -148,11 +148,12 @@ sections:
     id: contact
     content:
       title: Get In Touch
-      subtitle: "Let's build something amazing together"
+      subtitle: "We welcome inquiries from researchers, policymakers, and partners"
       text: |-
         We are always interested in hearing about new projects and opportunities.
       email: tuan.nguyen@missouri.edu
       autolink: true
+      social: []
     design:
       columns: '1'
       background:

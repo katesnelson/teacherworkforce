@@ -12,9 +12,7 @@ interests:
 affiliations:
   - name: University of Missouri
     url: https://missouri.edu
-links:
-  - icon: envelope
-    url: 'mailto:tuan.nguyen@missouri.edu'
+links: []
 user_groups:
   - Leadership
 date: 2024-05-19

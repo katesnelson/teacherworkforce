@@ -8,22 +8,15 @@ name:
 postnominals: []
 email: erre@missouri.edu
 bio: |
-  The Educator Recruitment, Retention, and Effectiveness center is dedicated to blah blah blah
+  The Educator Recruitment, Retention, and Effectiveness center is dedicated to improving teacher
+  recruitment, retention, and effectiveness across Missouri through data-driven research and policy
+  engagement.
 
 affiliations:
   - name: University of Missouri
     url: https://missouri.edu
 
-links:
-  - icon: at-symbol
-    url: mailto:erre@missouri.edu
-    label: Contact Us
-  - icon: brands/github
-    url: https://github.com/alexjohnson
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/alexjohnson/
-  - icon: brands/x
-    url: https://x.com/alexjohnson
+links: []
 
 interests:
   - Web Development
