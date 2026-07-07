@@ -15,8 +15,6 @@ affiliations:
 links: []
 user_groups:
   - Leadership
-authors:
-  - cory-koedel
 date: 2024-05-19
 weight: 20
 ---

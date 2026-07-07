@@ -15,8 +15,6 @@ affiliations:
 links: []
 user_groups:
   - Researchers
-authors:
-  - yujia-liu
 date: 2024-05-19
 weight: 30
 ---
