@@ -17,7 +17,5 @@ links:
     url: 'mailto:tuan.nguyen@missouri.edu'
 user_groups:
   - Researchers
-authors:
-  - tuan-nguyen
 weight: 10
 ---
