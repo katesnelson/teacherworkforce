@@ -1,0 +1,19 @@
+{{/* Fix hardcoded /authors/<slug>/ links (from the team-showcase block) so they
+     respect this site's baseURL subpath, e.g. /dev-portfolio/. This does not
+     modify the vendored block template, so its Tailwind-generated styling is
+     unaffected. */}}
+<script>
+(function () {
+  var basePath = {{ "" | relURL | jsonify }};
+  if (!basePath || basePath === "/") return;
+  var prefix = basePath.replace(/\/$/, "");
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('a[href^="/authors/"]').forEach(function (link) {
+      var href = link.getAttribute("href");
+      if (href && !href.startsWith(prefix)) {
+        link.setAttribute("href", prefix + href);
+      }
+    });
+  });
+})();
+</script>
