@@ -1,0 +1,11 @@
+{{/* The team-showcase block wraps its description text in a `prose` div with
+     no margin:auto, so it doesn't center within its already-centered parent
+     container -- causing wrapped lines to look misaligned/offset. Center it
+     specifically within the #team section without touching the vendored
+     block template. */}}
+<style>
+  #team .prose {
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
