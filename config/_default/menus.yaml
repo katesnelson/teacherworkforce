@@ -12,9 +12,10 @@ main:
   - name: About
     url: /#about
     weight: 10
-  - name: Briefs
-    url: /#briefs
-    weight: 40
+  # Briefs section is temporarily hidden. Uncomment to re-enable in the nav menu.
+  # - name: Briefs
+  #   url: /#briefs
+  #   weight: 40
   - name: Contact
     url: /#contact
     weight: 50

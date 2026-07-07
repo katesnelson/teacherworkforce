@@ -4,6 +4,10 @@ date: 2026-05-21
 summary: "A landscape analysis of teacher evaluation models used across Missouri school districts from 2022–23 through 2024–25."
 tags:
   - Report
+authors:
+  - tuan-nguyen
+  - yujia-liu
+  - cory-koedel
 featured: true
 ---
 
@@ -30,6 +34,8 @@ Most evaluation models use either four or seven rating categories. The NEE model
 
 *Figure 2.1. Distribution of Performance Rating Levels by Teacher Evaluation Model (2024–25)*
 
-## Download the Full Report
+## Download
 
 **[⬇ Download Full Report (PDF)](ERRE-TEL-MO-Report.pdf)**
+
+**[⬇ Download Research Brief (PDF)](ERRE-TEL-MO-Brief.pdf)** — a shorter summary of this report's findings.
