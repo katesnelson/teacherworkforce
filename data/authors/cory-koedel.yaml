@@ -1,0 +1,51 @@
+schema: hugoblox/author/v1
+slug: cory-koedel
+is_owner: false
+name:
+  display: Cory Koedel, Ph.D.
+  given: Cory
+  family: Koedel
+postnominals: []
+role: Co-Principal Investigator
+email: ''
+bio: |
+  Cory Koedel, Ph.D., is the Middlebush Chair in Economics and Professor of Economics and Public
+  Policy at the University of Missouri. He is a Co-PI on the ERRE Center. His research focuses on
+  teacher labor markets, teacher evaluation, and educator compensation, with a strong methodological
+  grounding in applied econometrics and causal inference. Cory has served on numerous influential
+  technical advisory bodies, including the Growth Model Technical Advisory Committee for MO DESE,
+  the Technical Advisory Group for the National Council on Teacher Quality, and the REL Central
+  Governing Board. He has held editorial leadership roles at multiple top journals, including as
+  former Coeditor of Economics of Education Review and current editorial board member at Educational
+  Evaluation and Policy Analysis, Education Finance and Policy, Research in Higher Education, and the
+  Journal of Research on Educational Effectiveness. As PI or Co-PI on grants from the IES, NSF, and
+  several foundations, Cory has supported a broad research agenda on teacher evaluations and labor
+  markets. He has an extensive publication record in leading journals such as the American Economic
+  Journal: Applied Economics, Journal of Policy Analysis and Management, American Educational
+  Research Journal, Educational Evaluation and Policy Analysis, and Educational Researcher.
+
+affiliations:
+  - name: University of Missouri
+    url: https://missouri.edu
+
+links: []
+
+user_groups:
+  - Leadership
+
+interests:
+  - Teacher labor markets
+  - Teacher evaluation
+  - Educator compensation
+  - Applied econometrics
+  - Causal inference
+
+education: []
+
+experience: []
+
+skills: []
+
+languages: []
+
+awards: []

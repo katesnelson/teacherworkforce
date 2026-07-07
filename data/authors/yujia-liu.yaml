@@ -1,0 +1,57 @@
+schema: hugoblox/author/v1
+slug: yujia-liu
+is_owner: false
+name:
+  display: Yujia Liu, Ph.D.
+  given: Yujia
+  family: Liu
+postnominals: []
+role: Postdoctoral Fellow
+email: ''
+bio: |
+  Yujia Liu, Ph.D., is a Postdoctoral Fellow in the College of Education and Human Development at
+  the University of Missouri, where she contributes quantitative and policy-analytic expertise to
+  ERRE. She earned her Ph.D. in Education with a specialization in Education Policy and Social
+  Context from the University of California, Irvine, and holds an M.Ed. in International Education
+  Policy and Management from Vanderbilt University's Peabody College. Her research interests span
+  education policy, teacher labor markets, causal inference, and rural education, with a portfolio
+  of publications in leading outlets such as the Journal of Research in Science Teaching, The
+  Internet and Higher Education, and Computers & Education. Her recent work examines STEM teacher
+  characteristics and mobility in the American Midwest, the rural teacher workforce using a novel
+  rurality measure, teacher mentoring and retention, and the effects of base salary increases on
+  teacher labor supply. Yujia brings strong methodological skills in quantitative research and
+  causal inference, along with experience analyzing large-scale administrative data on educators,
+  positioning her to play a central role in ERRE's labor market research and statewide educator
+  survey work.
+
+affiliations:
+  - name: University of Missouri
+    url: https://missouri.edu
+
+links: []
+
+user_groups:
+  - Researchers
+
+interests:
+  - Education policy
+  - Teacher labor markets
+  - Causal inference
+  - Rural education
+  - STEM education
+
+education:
+  - degree: Ph.D. in Education, Education Policy and Social Context
+    institution: University of California, Irvine
+    summary: ''
+  - degree: M.Ed. in International Education Policy and Management
+    institution: Vanderbilt University, Peabody College
+    summary: ''
+
+experience: []
+
+skills: []
+
+languages: []
+
+awards: []

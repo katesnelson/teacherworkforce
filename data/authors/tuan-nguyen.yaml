@@ -6,11 +6,24 @@ name:
   given: Tuan
   family: Nguyen
 postnominals: []
+role: Principal Investigator
 email: tuan.nguyen@missouri.edu
 bio: |
-  Mizzou Forward Associate Professor in the Department of Educational Leadership and Policy Analysis
-  at the University of Missouri. He serves as Principal Investigator of the Educator Recruitment,
-  Retention, and Effectiveness Center.
+  Tuan D. Nguyen, Ph.D., is a Mizzou Forward Associate Professor in the Department of Educational
+  Leadership and Policy Analysis at the University of Missouri. He serves as Principal Investigator
+  of the Educator Recruitment, Retention, and Effectiveness Center. His research focuses on education
+  policy, the economics of education, teacher labor markets, rural education as well as STEM and
+  special education, with particular expertise in causal inference and meta-analysis. Tuan has secured
+  over $8.6 million in extramural funding as PI or co-PI, including an NSF CAREER Award examining the
+  supply, qualifications, and career paths of STEM teachers. He has published widely in leading journals
+  such as the American Educational Research Journal, Educational Evaluation and Policy Analysis,
+  Educational Researcher, Review of Educational Research, AERA Open, and Economics of Education Review,
+  including highly cited work on teacher shortages, turnover, and the rural teacher workforce. His
+  scholarship has shaped national policy conversations, with contributions to the Economic Report of
+  the President, testimony before the U.S. Commission on Civil Rights, and frequent media coverage in
+  outlets including the New York Times, Washington Post, NPR, and Education Week. He also maintains
+  widely used public resources, including www.teachershortages.com and the Community Assets and
+  Relative Rurality (CARR) index, www.ruralityindex.com.
 
 affiliations:
   - name: University of Missouri
@@ -22,7 +35,7 @@ links:
     label: Contact
 
 user_groups:
-  - Researchers
+  - Leadership
 
 interests:
   - Education policy
@@ -30,6 +43,7 @@ interests:
   - Teacher labor markets
   - Rural education
   - STEM and special education
+  - Causal inference
 
 education: []
 

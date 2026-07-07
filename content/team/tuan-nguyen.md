@@ -1,7 +1,7 @@
 ---
 name:
   display: Tuan D. Nguyen, Ph.D.
-role: Leadership
+role: Principal Investigator
 bio: Mizzou Forward Associate Professor in the Department of Educational Leadership and Policy Analysis at the University of Missouri. He serves as Principal Investigator of the Educator Recruitment, Retention, and Effectiveness Center.
 interests:
   - Education policy
@@ -16,7 +16,7 @@ links:
   - icon: envelope
     url: 'mailto:tuan.nguyen@missouri.edu'
 user_groups:
-  - Researchers
+  - Leadership
 authors:
   - tuan-nguyen
 date: 2024-05-19
