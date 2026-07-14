@@ -30,6 +30,7 @@ The site includes:
 
 - [Before You Start: Tools You'll Need](#before-you-start-tools-youll-need)
 - [Understanding the Site Structure](#understanding-the-site-structure)
+- [Before all Updates](#before-all-updates)
 - [Minor Updates (single file, via GitHub.com)](#minor-updates-single-file-via-githubcom)
 - [Major Updates (multiple files, via GitHub Desktop)](#major-updates-multiple-files-via-github-desktop)
 - [Using Claude to Help With Updates](#using-claude-to-help-with-updates)
