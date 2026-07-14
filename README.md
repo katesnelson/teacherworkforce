@@ -1,6 +1,6 @@
 # Educator Recruitment, Retention, and Effectiveness (ERRE)
 
-Website build for information and resources on ERRE.Site is live at [teacherworforce.com](https://teacherworkforce.com).
+Website build for information and resources on ERRE.Site is live at [teacherworkforce.com](https://teacherworkforce.com).
 
 
 ## Credits
