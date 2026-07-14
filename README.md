@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.png" alt="ERRE Center logo" width="160">
+  <img src="assets/media/logo.png" alt="ERRE Center logo" width="160">
 </p>
 
 <h1 align="center">Educator Recruitment, Retention, and Effectiveness (ERRE) Center</h1>
