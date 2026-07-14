@@ -61,7 +61,7 @@ Common folders you may work in:
 | Folder | Contents |
 |---|---|
 | `content/home/_index.md` (or similar) | Homepage sections (hero text, about text, contact info) |
-| `content/authors/` and `content/team/` | Individual team member profiles |
+| `data/authors/` and `content/team/` | Individual team member profiles |
 | `content/projects/` | Reports and publications shown in the Reports section |
 | `static/media/` or `assets/media/` | Images, including the logo |
 
