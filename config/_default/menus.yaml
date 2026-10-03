@@ -12,6 +12,9 @@ main:
   - name: About
     url: /#about
     weight: 10
+  - name: Resources
+    url: /#resources
+    weight: 40
   # Briefs section is temporarily hidden. Uncomment to re-enable in the nav menu.
   # - name: Briefs
   #   url: /#briefs

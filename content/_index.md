@@ -91,7 +91,7 @@ sections:
 
   # Resource Showcase
   - block: markdown
-    id: resource
+    id: resources
     content:
       title: Resources
       subtitle: Research and practice resources
