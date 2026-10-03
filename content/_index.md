@@ -89,6 +89,22 @@ sections:
       # Section background color (CSS class)
       css_class: "bg-gray-50 dark:bg-gray-900"
 
+  # Resource Showcase
+  - block: markdown
+    id: resource
+    content:
+      title: Resources
+      subtitle: Research and practice resources
+      text: |-
+        Coming soon! We are collecting resources. Please check back later.
+    design:
+      columns: '1'
+      background:
+        color:
+          light: "#f9fafb"
+          dark: "#111827"
+      spacing:
+        padding: ["4rem", "0", "4rem", "0"]
     
   # Filterable Portfolio - Alpine.js powered project filtering
   - block: portfolio
