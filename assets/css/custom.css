@@ -43,3 +43,16 @@ nav a[href="/"] {
   background-position: left center;
   background-size: contain;
 }
+
+/* Compact only the top navigation items, not the left brand logo */
+header .navbar-nav {
+  gap: 0.2rem !important;
+  flex-wrap: nowrap !important;
+}
+
+header .navbar-nav > li > a:not([href="/"]) {
+  font-size: 0.85rem !important;
+  padding: 0.3rem 0.5rem !important;
+  line-height: 1.2 !important;
+  white-space: nowrap !important;
+}
