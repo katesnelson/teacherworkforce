@@ -89,23 +89,6 @@ sections:
       # Section background color (CSS class)
       css_class: "bg-gray-50 dark:bg-gray-900"
 
-  # Resource Showcase
-  - block: markdown
-    id: resources
-    content:
-      title: Resources
-      subtitle: Research and practice resources
-      text: |-
-        Coming soon! We are collecting resources. Please check back later.
-    design:
-      columns: '1'
-      background:
-        color:
-          light: "#f9fafb"
-          dark: "#111827"
-      spacing:
-        padding: ["4rem", "0", "4rem", "0"]
-    
   # Filterable Portfolio - Alpine.js powered project filtering
   - block: portfolio
     id: reports
@@ -133,9 +116,24 @@ sections:
           dark: "#0d0d12"
       spacing:
         padding: ["4rem", "0", "4rem", "0"]
-  
-  
-      
+
+  # Resource Showcase
+  - block: markdown
+    id: resources
+    content:
+      title: Resources
+      subtitle: Research and practice resources
+      text: |-
+        We bring together research on educator recruitment and retention, highlighting key findings and actionable insights for practitioners. Explore our resources [here](/resources/).
+    design:
+      columns: '1'
+      background:
+        color:
+          light: "#f9fafb"
+          dark: "#111827"
+      spacing:
+        padding: ["4rem", "0", "4rem", "0"]
+
   # Recent Blog Posts (Briefs) - temporarily hidden. Uncomment the block below to re-enable.
   # - block: collection
   #   id: briefs

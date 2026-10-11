@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ partial "resource-styles.html" . }}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+<article class="resource-page resource-detail">
+  <a class="resource-back" href="{{ .Parent.RelPermalink }}">← Back to Resources</a>
+  <header class="resource-header">
+    <h1 data-pagefind-meta="title">{{ .Title }}</h1>
+    {{ with .Params.resource_authors }}<p class="resource-authors">{{ . }}</p>{{ end }}
+  </header>
+  <div class="resource-body" data-pagefind-body>{{ .Content }}</div>
+</article>
+{{ end }}
