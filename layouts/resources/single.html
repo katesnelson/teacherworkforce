@@ -9,6 +9,21 @@
     <h1 data-pagefind-meta="title">{{ .Title }}</h1>
     {{ with .Params.resource_authors }}<p class="resource-authors">{{ . }}</p>{{ end }}
   </header>
-  <div class="resource-body" data-pagefind-body>{{ .Content }}</div>
+  <div class="resource-body" data-pagefind-body>
+    {{ with .Description }}
+    <h2 id="abstract">Abstract</h2>
+    {{ . | markdownify }}
+    {{ end }}
+    {{ .Content }}
+    {{ with .Params.keywords }}<p><strong>Keywords:</strong> {{ delimit . ", " }}</p>{{ end }}
+    {{ with .Params.education_level }}<p><strong>Education level:</strong> {{ . }}</p>{{ end }}
+    {{ with .Params.research_area }}<p><strong>Research Area:</strong> {{ . }}</p>{{ end }}
+    {{ with .Params.resource_tags }}<p><strong>Tags:</strong> {{ delimit . ", " }}</p>{{ end }}
+    {{ with .Params.download_url }}<p><a href="{{ . }}">Download (PDF)</a></p>{{ end }}
+    {{ with .Params.citation }}
+    <h2 id="cite-this-resource">Cite This Resource</h2>
+    <p>{{ . | markdownify }}</p>
+    {{ end }}
+  </div>
 </article>
 {{ end }}

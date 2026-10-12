@@ -1,32 +1,73 @@
 {{ define "main" }}
 {{ partial "resource-styles.html" . }}
-<main class="resource-page" id="publications">
+{{ $publications := .RegularPages.ByDate.Reverse }}
+{{ $subTopics := slice }}
+{{ $educationLevels := slice }}
+{{ range $publications }}
+  {{ with .Params.sub_topic }}{{ $subTopics = $subTopics | append . }}{{ end }}
+  {{ with .Params.education_level }}{{ $educationLevels = $educationLevels | append . }}{{ end }}
+{{ end }}
+<main class="resource-page resource-list-page" id="publications">
   <header class="resource-header">
     <h1>{{ .Title }}</h1>
     <div class="resource-intro">{{ .Content }}</div>
   </header>
-  {{ $publications := .RegularPages.ByDate.Reverse }}
-  {{ range $publications.GroupByDate "2006" }}
-  <section class="publication-year" aria-labelledby="year-{{ .Key }}">
-    <h2 id="year-{{ .Key }}">{{ .Key }}</h2>
-    <div class="view-content publications_data_listing_main">
-      {{ range .Pages }}
-      <article class="publication-item">
-        <div class="publication-meta">
-          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Params.publication_date | default (.Date.Format "January 2, 2006") }}</time>
-          {{ with .Params.publication_type }}<span class="publication-type">{{ . }}</span>{{ end }}
+  <div class="resource-layout" data-resource-browser>
+    <aside class="resource-filters" aria-labelledby="resource-filters-heading" hidden>
+      <h2 id="resource-filters-heading">Filter Resources</h2>
+      <form data-resource-filters aria-label="Filter resources">
+        <div class="resource-filter-field">
+          <label for="resource-topic">Topic</label>
+          <select id="resource-topic" name="topic">
+            <option value="">All</option>
+            {{ range slice "Recruitment" "Retention" "Effectiveness" }}<option value="{{ . }}">{{ . }}</option>{{ end }}
+          </select>
         </div>
-        <div class="publication-copy">
-          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-          <p>{{ .Description | default .Summary | plainify }}</p>
-          <a class="publication-button" href="{{ .RelPermalink }}" aria-label="Read more about {{ .Title }}">Read More <span aria-hidden="true">→</span></a>
+        <div class="resource-filter-field">
+          <label for="resource-sub-topic">Sub-topic</label>
+          <select id="resource-sub-topic" name="sub_topic" {{ if not $subTopics }}disabled aria-describedby="resource-sub-topic-help"{{ end }}>
+            <option value="">All</option>
+            {{ range sort (uniq $subTopics) }}<option value="{{ . }}">{{ . }}</option>{{ end }}
+          </select>
+          {{ if not $subTopics }}<p id="resource-sub-topic-help" class="resource-filter-help">No sub-topics available yet.</p>{{ end }}
         </div>
-      </article>
+        <div class="resource-filter-field">
+          <label for="resource-education-level">Education level</label>
+          <select id="resource-education-level" name="education_level">
+            <option value="">All</option>
+            {{ range sort (uniq $educationLevels) }}<option value="{{ . }}">{{ . }}</option>{{ end }}
+          </select>
+        </div>
+        <button class="resource-filter-reset" type="reset">Clear filters</button>
+      </form>
+    </aside>
+    <div class="resource-results">
+      <p class="resource-result-count" role="status" aria-live="polite" aria-atomic="true" hidden></p>
+      {{ range $publications.GroupByDate "2006" }}
+      <section class="publication-year" aria-labelledby="year-{{ .Key }}">
+        <h2 id="year-{{ .Key }}">{{ .Key }}</h2>
+        <div class="view-content publications_data_listing_main">
+          {{ range .Pages }}
+          <article class="publication-item" data-topic="{{ .Params.topic | default "" }}" data-sub-topic="{{ .Params.sub_topic | default "" }}" data-education-level="{{ .Params.education_level | default "" }}">
+            <div class="publication-copy">
+              <div class="publication-meta">
+                <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Params.publication_date | default (.Date.Format "January 2, 2006") }}</time>
+                {{ with .Params.publication_type }}<span class="publication-type">{{ . }}</span>{{ end }}
+              </div>
+              <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+              <p>{{ .Description | default .Summary | plainify }}</p>
+              <a class="publication-button" href="{{ .RelPermalink }}" aria-label="Read more about {{ .Title }}">Read More <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          {{ end }}
+        </div>
+      </section>
       {{ end }}
+      <p class="resource-empty" hidden>No resources match these filters. Try another selection or clear the filters.</p>
+      {{ if not $publications }}<noscript><p>Publications will be added soon.</p></noscript>{{ end }}
     </div>
-  </section>
-  {{ else }}
-  <p>Publications will be added soon.</p>
-  {{ end }}
+  </div>
 </main>
+{{ $filterScript := resources.Get "js/resources-filter.js" | minify | fingerprint }}
+<script src="{{ $filterScript.RelPermalink }}" integrity="{{ $filterScript.Data.Integrity }}" defer></script>
 {{ end }}
