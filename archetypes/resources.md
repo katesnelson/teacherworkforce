@@ -1,6 +1,6 @@
 ---
-# FILE NAMING: YYYY-MM-short-title.md (publication year, two-digit month, short title).
-# Example: content/resources/2022-08-national-teacher-shortage.md
+# FILE NAMING: author-year-short-title.md (first author surname, publication year, short title).
+# Example: content/resources/nguyen-2022-national-teacher-shortage.md
 
 # title of the publication
 title: ""
@@ -17,23 +17,42 @@ type: resources
 # URL slug: short lowercase words separated by hyphens, without .md.
 # Example: "national-teacher-shortage" gives /resources/national-teacher-shortage/.
 slug: ""
-publication_type: "Working Paper"
 resource_authors: ""
 
-# Choose one: Recruitment, Retention, Effectiveness.
-topic: ""
-# Value list to be added
-sub_topic: ""
-education_level: ""
-research_area: ""
-keywords: []
-resource_tags: []
-download_url: ""
+# Multi-value YAML lists; Topic values: Recruitment, Retention, Effectiveness.
+# Example: topic: ["Recruitment", "Retention"]
+topic: []
+# Subtopic options are collected automatically from published resource pages.
+sub_topic: []
+education_level: []
+# Show only available access options. Never use a restricted publisher PDF here.
+brief_url: ""
+working_paper_url: ""
+published_paper_url: ""
+paper_id: ""
+brief_year: ""
+brief_number: ""
+acknowledgment: ""
+# APA 7: authors, year, sentence-case title, italic journal and volume, issue, pages, DOI URL.
 citation: >-
-  
-# ABSTRACT: description is the shared field for the list and detail page's Abstract section.
-# Blank lines separate paragraphs; do not duplicate the text in the body.
+
+# LIST INTRODUCTION: copy the original paper abstract into description.
+# Preserve the source wording; do not substitute Why It Matters or an AI summary.
+# Website detail order: title, Study authors, ERRE Research Brief | YYYY-NNN.
+# No institutional masthead, ABOUT THE ORIGINAL STUDY, divider lines, or logos.
+# The detail page uses the four brief sections below.
 description: |-
-  
+
+# DETAIL PAGE: one paragraph explaining the study's relevance.
+why_it_matters: >-
+
+data_and_sample: >-
+
+# Add 3-5 findings as YAML list items, each starting with a hyphen.
+# Example: - "Greater rurality is associated with more district departures."
+key_findings: []
+# Add 3 policy implications; distinguish supported actions from untested proposals.
+# Markdown emphasis is supported, e.g. - "**Evaluate locally:** Test effects before scaling."
+policy_implications: []
 draft: true
 ---

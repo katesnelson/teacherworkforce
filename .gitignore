@@ -9,6 +9,10 @@
 # Generated site output
 public/
 
+# Local research outputs and document templates (not website content)
+/outputs/
+/templates/
+
 # Hugo resources (processed assets)
 /resources/
 

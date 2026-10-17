@@ -1,0 +1,6 @@
+{{/* Accept legacy scalar values as well as multi-value YAML lists. */}}
+{{ $values := slice }}
+{{ with . }}
+  {{ if reflect.IsSlice . }}{{ $values = . }}{{ else }}{{ $values = slice . }}{{ end }}
+{{ end }}
+{{ return $values }}

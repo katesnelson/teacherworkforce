@@ -3,4 +3,4 @@ title: 'Resources'
 type: resources
 ---
 
-We bring together research on educator recruitment and retention, highlighting key findings and actionable insights for practitioners.
+We translate research on educator recruitment, retention, and effectiveness into concise briefs to inform policy decisions.

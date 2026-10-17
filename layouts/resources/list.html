@@ -4,8 +4,8 @@
 {{ $subTopics := slice }}
 {{ $educationLevels := slice }}
 {{ range $publications }}
-  {{ with .Params.sub_topic }}{{ $subTopics = $subTopics | append . }}{{ end }}
-  {{ with .Params.education_level }}{{ $educationLevels = $educationLevels | append . }}{{ end }}
+  {{ range (partial "resource-values.html" .Params.sub_topic) }}{{ $subTopics = $subTopics | append . }}{{ end }}
+  {{ range (partial "resource-values.html" .Params.education_level) }}{{ $educationLevels = $educationLevels | append . }}{{ end }}
 {{ end }}
 <main class="resource-page resource-list-page" id="publications">
   <header class="resource-header">
@@ -15,7 +15,11 @@
   <div class="resource-layout" data-resource-browser>
     <aside class="resource-filters" aria-labelledby="resource-filters-heading" hidden>
       <h2 id="resource-filters-heading">Filter Resources</h2>
-      <form data-resource-filters aria-label="Filter resources">
+      <form id="resource-filter-form" data-resource-filters aria-label="Filter resources">
+        <div class="resource-filter-field">
+          <label for="resource-search">Search resources</label>
+          <input id="resource-search" name="q" type="search" placeholder="Title, author, or keyword" autocomplete="off">
+        </div>
         <div class="resource-filter-field">
           <label for="resource-topic">Topic</label>
           <select id="resource-topic" name="topic">
@@ -24,12 +28,12 @@
           </select>
         </div>
         <div class="resource-filter-field">
-          <label for="resource-sub-topic">Sub-topic</label>
+          <label for="resource-sub-topic">Subtopic</label>
           <select id="resource-sub-topic" name="sub_topic" {{ if not $subTopics }}disabled aria-describedby="resource-sub-topic-help"{{ end }}>
             <option value="">All</option>
             {{ range sort (uniq $subTopics) }}<option value="{{ . }}">{{ . }}</option>{{ end }}
           </select>
-          {{ if not $subTopics }}<p id="resource-sub-topic-help" class="resource-filter-help">No sub-topics available yet.</p>{{ end }}
+          {{ if not $subTopics }}<p id="resource-sub-topic-help" class="resource-filter-help">No subtopics available yet.</p>{{ end }}
         </div>
         <div class="resource-filter-field">
           <label for="resource-education-level">Education level</label>
@@ -42,17 +46,26 @@
       </form>
     </aside>
     <div class="resource-results">
-      <p class="resource-result-count" role="status" aria-live="polite" aria-atomic="true" hidden></p>
-      {{ range $publications.GroupByDate "2006" }}
-      <section class="publication-year" aria-labelledby="year-{{ .Key }}">
-        <h2 id="year-{{ .Key }}">{{ .Key }}</h2>
-        <div class="view-content publications_data_listing_main">
-          {{ range .Pages }}
-          <article class="publication-item" data-topic="{{ .Params.topic | default "" }}" data-sub-topic="{{ .Params.sub_topic | default "" }}" data-education-level="{{ .Params.education_level | default "" }}">
+      <div class="resource-results-toolbar" hidden>
+        <p class="resource-result-count" role="status" aria-live="polite" aria-atomic="true" tabindex="-1"></p>
+        <div class="resource-sort">
+          <label for="resource-sort">Sort by</label>
+          <select id="resource-sort" name="sort" form="resource-filter-form">
+            <option value="date-desc">Publication date: newest first</option>
+            <option value="date-asc">Publication date: oldest first</option>
+            <option value="title">Title: A–Z</option>
+          </select>
+        </div>
+      </div>
+      <div class="resource-active-filters" aria-label="Selected filters" hidden></div>
+      <div class="view-content publications_data_listing_main" data-resource-list>
+          {{ range $publications }}
+          <article class="publication-item" data-title="{{ .Title }}" data-date="{{ .Date.Format "2006-01-02" }}" data-search="{{ printf "%s %s %s %s" .Title (.Params.resource_authors | default "") (.Description | plainify) (delimit (.Params.keywords | default (slice)) " ") }}" data-topic="{{ partial "resource-values.html" .Params.topic | jsonify }}" data-sub-topic="{{ partial "resource-values.html" .Params.sub_topic | jsonify }}" data-education-level="{{ partial "resource-values.html" .Params.education_level | jsonify }}">
             <div class="publication-copy">
               <div class="publication-meta">
-                <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Params.publication_date | default (.Date.Format "January 2, 2006") }}</time>
-                {{ with .Params.publication_type }}<span class="publication-type">{{ . }}</span>{{ end }}
+                {{ with .Params.topic }}<span>{{ delimit (partial "resource-values.html" .) ", " }}</span>{{ end }}
+                {{ if and .Params.topic .Params.education_level }}<span aria-hidden="true">·</span>{{ end }}
+                {{ with .Params.education_level }}<span>{{ delimit (partial "resource-values.html" .) ", " }}</span>{{ end }}
               </div>
               <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
               <p>{{ .Description | default .Summary | plainify }}</p>
@@ -60,9 +73,8 @@
             </div>
           </article>
           {{ end }}
-        </div>
-      </section>
-      {{ end }}
+      </div>
+      <nav class="resource-pagination" aria-label="Resource pages" hidden></nav>
       <p class="resource-empty" hidden>No resources match these filters. Try another selection or clear the filters.</p>
       {{ if not $publications }}<noscript><p>Publications will be added soon.</p></noscript>{{ end }}
     </div>

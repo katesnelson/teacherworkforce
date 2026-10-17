@@ -5,25 +5,46 @@
 <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
 <article class="resource-page resource-detail">
   <a class="resource-back" href="{{ .Parent.RelPermalink }}">← Back to Resources</a>
-  <header class="resource-header">
+  <header class="resource-header brief-title-block">
     <h1 data-pagefind-meta="title">{{ .Title }}</h1>
-    {{ with .Params.resource_authors }}<p class="resource-authors">{{ . }}</p>{{ end }}
+    {{ with .Params.resource_authors }}<p class="resource-authors">Study authors: {{ . }}</p>{{ end }}
+    {{ with .Params.brief_number }}<p class="brief-number">ERRE Research Brief | {{ $.Params.brief_year }}-{{ . }}</p>{{ end }}
   </header>
   <div class="resource-body" data-pagefind-body>
-    {{ with .Description }}
-    <h2 id="abstract">Abstract</h2>
-    {{ . | markdownify }}
-    {{ end }}
-    {{ .Content }}
-    {{ with .Params.keywords }}<p><strong>Keywords:</strong> {{ delimit . ", " }}</p>{{ end }}
-    {{ with .Params.education_level }}<p><strong>Education level:</strong> {{ . }}</p>{{ end }}
-    {{ with .Params.research_area }}<p><strong>Research Area:</strong> {{ . }}</p>{{ end }}
-    {{ with .Params.resource_tags }}<p><strong>Tags:</strong> {{ delimit . ", " }}</p>{{ end }}
-    {{ with .Params.download_url }}<p><a href="{{ . }}">Download (PDF)</a></p>{{ end }}
-    {{ with .Params.citation }}
-    <h2 id="cite-this-resource">Cite This Resource</h2>
+    {{ with .Params.why_it_matters }}
+    <h2 id="why-it-matters">Why It Matters</h2>
     <p>{{ . | markdownify }}</p>
     {{ end }}
+    {{ with .Params.data_and_sample }}
+    <h2 id="data-and-sample">Data and Sample</h2>
+    <p>{{ . | markdownify }}</p>
+    {{ end }}
+    {{ with .Params.key_findings }}
+    <h2 id="key-findings">Key Findings</h2>
+    <ul>{{ range . }}<li>{{ . | markdownify }}</li>{{ end }}</ul>
+    {{ end }}
+    {{ with .Params.policy_implications }}
+    <h2 id="policy-implications">Policy Implications</h2>
+    <ul>{{ range . }}<li>{{ . | markdownify }}</li>{{ end }}</ul>
+    {{ end }}
+    {{ .Content }}
+    <dl class="resource-classification">
+      {{ range slice (dict "key" "topic" "label" "Topic") (dict "key" "sub_topic" "label" "Subtopic") (dict "key" "education_level" "label" "Education level") }}
+      {{ $field := . }}
+      {{ with index $.Params .key }}<div><dt>{{ $field.label }}</dt><dd>{{ delimit (partial "resource-values.html" .) "; " }}</dd></div>{{ end }}
+      {{ end }}
+    </dl>
+    <div class="resource-downloads" aria-label="Access this resource">
+      {{ with .Params.brief_url }}<a class="resource-download" href="{{ . | relURL }}" target="_blank" rel="noopener noreferrer">Download Brief (PDF)</a>{{ end }}
+      {{ with (.Params.working_paper_url | default .Params.download_url) }}<a class="resource-download" href="{{ . }}" target="_blank" rel="noopener noreferrer">Download Full Working Paper (PDF)</a>{{ end }}
+      {{ with .Params.published_paper_url }}<a class="resource-download" href="{{ . }}" target="_blank" rel="noopener noreferrer">Link to the Published Paper</a>{{ end }}
+    </div>
+    {{ with .Params.citation }}
+    <h2 id="cite-this-resource">Full Citation</h2>
+    <p>{{ . | markdownify }}</p>
+    {{ end }}
+    {{ with .Params.published_paper_url }}{{ if not (strings.Contains ($.Params.citation | default "") .) }}<p>Read the full paper: <a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ . }}</a></p>{{ end }}{{ end }}
+    {{ with .Params.acknowledgment }}<div class="brief-disclaimer"><h2>Acknowledgment and Disclaimer</h2><p>{{ . }}</p></div>{{ end }}
   </div>
 </article>
 {{ end }}

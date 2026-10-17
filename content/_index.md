@@ -124,9 +124,11 @@ sections:
       title: Resources
       subtitle: Research and practice resources
       text: |-
-        We bring together research on educator recruitment and retention, highlighting key findings and actionable insights for practitioners. Explore our resources [here](/resources/).
+        We translate research on educator recruitment, retention, and effectiveness into concise briefs to inform policy decisions.
 
-        Browse by topic: [Recruitment](/resources/?topic=Recruitment) · [Retention](/resources/?topic=Retention) · [Effectiveness](/resources/?topic=Effectiveness).
+        Explore our resources [here](/resources/).
+
+        Browse by topic: [Recruitment](/resources/?topic=Recruitment) · [Retention](/resources/?topic=Retention) · [Effectiveness](/resources/?topic=Effectiveness)
     design:
       columns: '1'
       background:
