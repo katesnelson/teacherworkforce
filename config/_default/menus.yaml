@@ -3,15 +3,18 @@
 #   The weight parameter defines the order that the links appear.
 
 main:
-  - name: Reports
-    url: /#reports
-    weight: 30
-  - name: Team
-    url: /#team
-    weight: 20
   - name: About
     url: /#about
     weight: 10
+  - name: Team
+    url: /#team
+    weight: 20
+  - name: Reports
+    url: /#reports
+    weight: 30
+  - name: Resources
+    url: /#resources
+    weight: 40
   # Briefs section is temporarily hidden. Uncomment to re-enable in the nav menu.
   # - name: Briefs
   #   url: /#briefs
