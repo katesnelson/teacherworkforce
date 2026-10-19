@@ -8,7 +8,7 @@ slug: "nguyen-2020-examining-teacher-labor-market-different-rural-contexts"
 paper_id: "P0004"
 brief_year: 2026
 brief_number: "004"
-resource_authors: "Nguyen, T. D."
+resource_authors: "Tuan D. Nguyen"
 topic: ["Recruitment", "Retention"]
 sub_topic: ["Rural Education", "Working Conditions"]
 education_level: ["K-12 Education"]

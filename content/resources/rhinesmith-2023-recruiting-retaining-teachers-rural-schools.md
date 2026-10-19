@@ -8,7 +8,7 @@ slug: "rhinesmith-2023-recruiting-retaining-teachers-rural-schools"
 paper_id: "P0005"
 brief_year: 2026
 brief_number: "005"
-resource_authors: "Rhinesmith, E., Anglum, J. C., Park, A., & Burrola, A."
+resource_authors: "Evan Rhinesmith, J. Cameron Anglum, Aaron Park, and Abigail Burrola"
 topic: ["Recruitment", "Retention"]
 sub_topic: ["Rural Education", "Working Conditions", "Compensation and Financial Incentives", "Teacher Support and Professional Development"]
 education_level: ["K-12 Education"]

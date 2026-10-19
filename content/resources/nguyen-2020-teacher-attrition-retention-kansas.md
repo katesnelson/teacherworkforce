@@ -8,7 +8,7 @@ slug: "nguyen-2020-teacher-attrition-retention-kansas"
 paper_id: "P0008"
 brief_year: 2026
 brief_number: "008"
-resource_authors: "Nguyen, T."
+resource_authors: "Tuan D. Nguyen"
 topic: ["Recruitment", "Retention"]
 sub_topic: ["Rural Education", "Working Conditions", "Compensation and Financial Incentives"]
 education_level: ["K-12 Education"]

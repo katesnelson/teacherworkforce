@@ -8,7 +8,7 @@ slug: "bettini-2022-disparities-access-well-qualified-well-supported-special-edu
 paper_id: "P0006"
 brief_year: 2026
 brief_number: "006"
-resource_authors: "Bettini, E., Nguyen, T. D., Gilmour, A. F., & Redding, C."
+resource_authors: "Elizabeth Bettini, Tuan D. Nguyen, Allison F. Gilmour, and Christopher Redding"
 topic: ["Recruitment", "Effectiveness"]
 sub_topic: ["Special Education", "Working Conditions", "Equity and Diversity", "Teacher Collaboration", "Teacher Preparation and Certification"]
 education_level: ["K-12 Education"]

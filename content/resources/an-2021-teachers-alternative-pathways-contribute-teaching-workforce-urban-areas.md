@@ -8,7 +8,7 @@ slug: "an-2021-teachers-alternative-pathways-contribute-teaching-workforce-urban
 paper_id: "P0009"
 brief_year: 2026
 brief_number: "009"
-resource_authors: "An, Y., & Koedel, C."
+resource_authors: "Yang An and Cory Koedel"
 topic: ["Recruitment"]
 sub_topic: ["Urban Education", "Teacher Preparation and Certification", "School Choice", "Equity and Diversity", "Student Outcomes"]
 education_level: ["K-12 Education"]
