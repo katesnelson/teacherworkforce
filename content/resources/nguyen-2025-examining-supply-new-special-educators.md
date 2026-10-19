@@ -8,7 +8,7 @@ slug: "nguyen-2025-examining-supply-new-special-educators"
 paper_id: "P0012"
 brief_year: 2026
 brief_number: "012"
-resource_authors: "Nguyen, T. D., Bettini, E., Gilmour, A. F., & Redding, C."
+resource_authors: "Tuan D. Nguyen, Elizabeth Bettini, Allison F. Gilmour, and Christopher Redding"
 topic: ["Recruitment"]
 sub_topic: ["Special Education", "Teacher Preparation and Certification"]
 education_level: ["K-12 Education"]

@@ -17,6 +17,8 @@ type: resources
 # URL slug: short lowercase words separated by hyphens, without .md.
 # Example: "national-teacher-shortage" gives /resources/national-teacher-shortage/.
 slug: ""
+# Study authors: use full given names and surnames, in the original paper's order.
+# Retain middle initials as published; do not copy APA citation initials into this field.
 resource_authors: ""
 
 # Multi-value YAML lists; Topic values: Recruitment, Retention, Effectiveness.

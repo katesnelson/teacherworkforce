@@ -8,7 +8,7 @@ slug: "nguyen-2025-supply-quality-stem-teachers"
 paper_id: "P0011"
 brief_year: 2026
 brief_number: "011"
-resource_authors: "Nguyen, T. D."
+resource_authors: "Tuan D. Nguyen"
 topic: ["Recruitment", "Effectiveness"]
 sub_topic: ["STEM and CTE", "Teacher Preparation and Certification", "Compensation and Financial Incentives", "Equity and Diversity"]
 education_level: ["K-12 Education"]

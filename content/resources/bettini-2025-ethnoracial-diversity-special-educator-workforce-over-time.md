@@ -8,7 +8,7 @@ slug: "bettini-2025-ethnoracial-diversity-special-educator-workforce-over-time"
 paper_id: "P0007"
 brief_year: 2026
 brief_number: "007"
-resource_authors: "Bettini, E., Nguyen, T. D., Ellis-Robinson, T., Mason-Williams, L., Allen-Barrett, A., & Bass, A."
+resource_authors: "Elizabeth Bettini, Tuan D. Nguyen, Tammy Ellis-Robinson, Loretta Mason-Williams, Alex Allen-Barrett, and Ayana Bass"
 topic: ["Recruitment", "Retention"]
 sub_topic: ["Special Education", "Equity and Diversity"]
 education_level: ["K-12 Education"]

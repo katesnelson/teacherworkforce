@@ -8,7 +8,7 @@ slug: "camp-2026-effects-four-day-school-week-teacher-recruitment-retention"
 paper_id: "P0020"
 brief_year: 2026
 brief_number: "020"
-resource_authors: "Camp, A. M., Anglum, J. C., Koedel, C., Lee, S. W., & Nguyen, T. D."
+resource_authors: "Andrew M. Camp, J. Cameron Anglum, Cory Koedel, Se Woong Lee, and Tuan D. Nguyen"
 topic: ["Recruitment", "Retention"]
 sub_topic: ["School Organization", "Rural Education"]
 education_level: ["K-12 Education"]

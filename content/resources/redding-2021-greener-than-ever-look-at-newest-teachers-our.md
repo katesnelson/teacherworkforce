@@ -8,7 +8,7 @@ slug: "redding-2021-greener-than-ever-look-at-newest-teachers-our"
 paper_id: "P0010"
 brief_year: 2026
 brief_number: "010"
-resource_authors: "Redding, C., & Nguyen, T. D."
+resource_authors: "Christopher Redding and Tuan D. Nguyen"
 topic: ["Recruitment", "Retention"]
 sub_topic: ["Teacher Preparation and Certification", "Equity and Diversity"]
 education_level: ["K-12 Education"]

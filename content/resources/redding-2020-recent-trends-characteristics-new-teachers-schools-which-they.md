@@ -8,7 +8,7 @@ slug: "redding-2020-recent-trends-characteristics-new-teachers-schools-which-the
 paper_id: "P0001"
 brief_year: 2026
 brief_number: "001"
-resource_authors: "Redding, C., & Nguyen, T. D."
+resource_authors: "Christopher Redding and Tuan D. Nguyen"
 topic: ["Recruitment", "Retention"]
 sub_topic: ["Teacher Preparation and Certification", "Teacher Support and Professional Development", "Working Conditions", "Equity and Diversity"]
 education_level: ["K-12 Education"]
