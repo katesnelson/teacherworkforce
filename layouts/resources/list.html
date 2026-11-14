@@ -2,10 +2,8 @@
 {{ partial "resource-styles.html" . }}
 {{ $publications := .RegularPages.ByDate.Reverse }}
 {{ $subTopics := slice }}
-{{ $educationLevels := slice }}
 {{ range $publications }}
   {{ range (partial "resource-values.html" .Params.sub_topic) }}{{ $subTopics = $subTopics | append . }}{{ end }}
-  {{ range (partial "resource-values.html" .Params.education_level) }}{{ $educationLevels = $educationLevels | append . }}{{ end }}
 {{ end }}
 <main class="resource-page resource-list-page" id="publications">
   <header class="resource-header">
@@ -35,13 +33,6 @@
           </select>
           {{ if not $subTopics }}<p id="resource-sub-topic-help" class="resource-filter-help">No subtopics available yet.</p>{{ end }}
         </div>
-        <div class="resource-filter-field">
-          <label for="resource-education-level">Education level</label>
-          <select id="resource-education-level" name="education_level">
-            <option value="">All</option>
-            {{ range sort (uniq $educationLevels) }}<option value="{{ . }}">{{ . }}</option>{{ end }}
-          </select>
-        </div>
         <button class="resource-filter-reset" type="reset">Clear filters</button>
       </form>
     </aside>
@@ -60,12 +51,10 @@
       <div class="resource-active-filters" aria-label="Selected filters" hidden></div>
       <div class="view-content publications_data_listing_main" data-resource-list>
           {{ range $publications }}
-          <article class="publication-item" data-title="{{ .Title }}" data-date="{{ .Date.Format "2006-01-02" }}" data-search="{{ printf "%s %s %s %s" .Title (.Params.resource_authors | default "") (.Description | plainify) (delimit (.Params.keywords | default (slice)) " ") }}" data-topic="{{ partial "resource-values.html" .Params.topic | jsonify }}" data-sub-topic="{{ partial "resource-values.html" .Params.sub_topic | jsonify }}" data-education-level="{{ partial "resource-values.html" .Params.education_level | jsonify }}">
+          <article class="publication-item" data-title="{{ .Title }}" data-date="{{ .Date.Format "2006-01-02" }}" data-search="{{ printf "%s %s %s %s" .Title (.Params.resource_authors | default "") (.Description | plainify) (delimit (.Params.keywords | default (slice)) " ") }}" data-topic="{{ partial "resource-values.html" .Params.topic | jsonify }}" data-sub-topic="{{ partial "resource-values.html" .Params.sub_topic | jsonify }}">
             <div class="publication-copy">
               <div class="publication-meta">
                 {{ with .Params.topic }}<span>{{ delimit (partial "resource-values.html" .) ", " }}</span>{{ end }}
-                {{ if and .Params.topic .Params.education_level }}<span aria-hidden="true">·</span>{{ end }}
-                {{ with .Params.education_level }}<span>{{ delimit (partial "resource-values.html" .) ", " }}</span>{{ end }}
               </div>
               <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
               <p>{{ .Description | default .Summary | plainify }}</p>

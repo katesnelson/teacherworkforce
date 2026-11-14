@@ -1,0 +1,2 @@
+{{ $palette := resources.Get "css/erre-palette.css" | minify | fingerprint "sha256" }}
+<link rel="stylesheet" href="{{ $palette.RelPermalink }}" integrity="{{ $palette.Data.Integrity }}" crossorigin="anonymous">

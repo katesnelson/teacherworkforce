@@ -29,7 +29,7 @@
     {{ end }}
     {{ .Content }}
     <dl class="resource-classification">
-      {{ range slice (dict "key" "topic" "label" "Topic") (dict "key" "sub_topic" "label" "Subtopic") (dict "key" "education_level" "label" "Education level") }}
+      {{ range slice (dict "key" "topic" "label" "Topic") (dict "key" "sub_topic" "label" "Subtopic") }}
       {{ $field := . }}
       {{ with index $.Params .key }}<div><dt>{{ $field.label }}</dt><dd>{{ delimit (partial "resource-values.html" .) "; " }}</dd></div>{{ end }}
       {{ end }}

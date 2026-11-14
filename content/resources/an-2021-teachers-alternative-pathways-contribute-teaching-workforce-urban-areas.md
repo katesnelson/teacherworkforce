@@ -10,8 +10,7 @@ brief_year: 2026
 brief_number: "009"
 resource_authors: "Yang An and Cory Koedel"
 topic: ["Recruitment"]
-sub_topic: ["Urban Education", "Teacher Preparation and Certification", "School Choice", "Equity and Diversity", "Student Outcomes"]
-education_level: ["K-12 Education"]
+sub_topic: ["Urban Education", "Teacher Preparation and Certification", "School Choice", "Student Outcomes"]
 description: "We examine how teachers from two alternative preparation programs—Teach for America (TFA) and Kansas City Teacher Residency (KCTR)—contribute to the teacher labor market in and around Kansas City, Missouri. TFA and KCTR teachers are more likely than other teachers to work in charter schools and, more broadly, in schools with more low-income, low-performing, and underrepresented minority (Black and Hispanic) students. Teachers from both programs are more racially/ethnically diverse than the larger local-area teaching workforce, but only KCTR teachers are more diverse than other teachers in the same districts where they work. We estimate value added to achievement for teachers in both programs compared with nonprogram teachers, with the caveat that our KCTR sample for this analysis is small. In math, we find large positive impacts of TFA and KCTR teachers on test score growth; in English language arts also, we estimate positive impacts, but they are smaller."
 why_it_matters: "Alternative preparation routes may contribute differently to urban staffing, diversity, and student learning. This study compares Teach for America and Kansas City Teacher Residency teachers with local nonprogram teachers."
 data_and_sample: "The study uses Missouri administrative records to examine program placements, student achievement, and teacher retention in the Kansas City area. Value-added analyses focus on tested grades and subjects; the residency teacher sample is small."
@@ -21,6 +20,6 @@ acknowledgment: "This brief was produced with support from the Walton Family Fou
 citation: "An, Y., & Koedel, C. (2021). How do teachers from alternative pathways contribute to the teaching workforce in urban areas? Evidence from Kansas City. *AERA Open, 7*, Article 23328584211026952. https://doi.org/10.1177/23328584211026952"
 published_paper_url: "https://doi.org/10.1177/23328584211026952"
 brief_url: "/uploads/briefs/an-2021-teachers-alternative-pathways-contribute-teaching-workforce-urban-areas-brief.pdf"
-draft: false
+draft: true
 working_paper_url: "/uploads/working-papers/an-2021-teachers-alternative-pathways-contribute-teaching-workforce-urban-areas-working-paper.pdf"
 ---

@@ -12,7 +12,7 @@
   .publication-copy p { line-height: 1.65; color: #4b5563; margin: 0 0 1.25rem; }
   .publication-button { display: inline-flex; align-items: center; gap: .75rem; padding: .65rem 1rem; border: 1px solid #374151; border-radius: .2rem; color: inherit; font-weight: 600; text-decoration: none; }
   .publication-button:hover { background: #1f2937; color: #fff; }
-  .resource-page a:focus-visible { outline: 3px solid #2563eb; outline-offset: 4px; }
+  .resource-page a:focus-visible { outline: 3px solid #8a6300; outline-offset: 4px; }
   .resource-detail { max-width: 900px; }
   .resource-back { display: inline-block; margin-bottom: 2rem; text-decoration: underline; text-underline-offset: .2em; }
   .resource-detail .publication-meta { flex-direction: row; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 1rem; }
@@ -32,7 +32,7 @@
   .resource-filter-help { font-size: .75rem; line-height: 1.5; margin-top: .5rem; color: #6b7280; }
   .resource-filter-reset { padding: .5rem .75rem; min-height: 44px; border: 1px solid #9ca3af; border-radius: 4px; font-size: .875rem; cursor: pointer; }
   .resource-filter-reset:hover { background: #e5e7eb; }
-  .resource-filters :is(select, input, button):focus-visible { outline: 3px solid #2563eb; outline-offset: 3px; }
+  .resource-filters :is(select, input, button):focus-visible { outline: 3px solid #8a6300; outline-offset: 3px; }
   .resource-result-count { font-size: .875rem; color: #6b7280; margin-bottom: 1.25rem; }
   .resource-results { min-width: 0; }
   .resource-results-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; }
@@ -46,7 +46,7 @@
   .resource-pagination a, .resource-pagination [aria-current] { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; padding: .5rem .75rem; border: 1px solid #9ca3af; border-radius: 4px; }
   .resource-pagination [aria-current] { background: #1f2937; color: #fff; }
   .resource-pagination a:hover { background: #e5e7eb; }
-  .resource-results :is(select, button, a):focus-visible { outline: 3px solid #2563eb; outline-offset: 3px; }
+  .resource-results :is(select, button, a):focus-visible { outline: 3px solid #8a6300; outline-offset: 3px; }
   .dark .resource-sort select { background: #1f2937; color: #f3f4f6; color-scheme: dark; }
   .dark .resource-filter-tag:hover, .dark .resource-pagination a:hover { background: #374151; }
   .dark .resource-pagination [aria-current] { background: #e5e7eb; color: #111827; }
@@ -62,21 +62,21 @@
   }
   /* Paper details follow EdWorkingPapers typography; list styles stay independent. */
   .resource-detail { max-width: 848px; font-family: "PT Serif", Georgia, serif; font-size: 16px; line-height: 24px; color: #212529; }
-  .resource-detail .resource-back { color: #127fa1; font-size: 14px; margin-bottom: 1.5rem; }
+  .resource-detail .resource-back { color: #292929; font-size: 14px; margin-bottom: 1.5rem; }
   .resource-detail .resource-header { margin-bottom: 2rem; }
-  .resource-detail .resource-header h1 { font-family: "Poppins", sans-serif; font-size: min(calc(1.375rem + 1.5vw), 2.5rem); font-weight: 500; line-height: 1.2; color: #003c71; margin-bottom: 1.25rem; letter-spacing: normal; }
-  .resource-detail .resource-authors { color: #127fa1; margin: 0 0 .75rem; }
+  .resource-detail .resource-header h1 { font-family: "Poppins", sans-serif; font-size: min(calc(1.375rem + 1.5vw), 2.5rem); font-weight: 500; line-height: 1.2; color: #292929; margin-bottom: 1.25rem; letter-spacing: normal; }
+  .resource-detail .resource-authors { color: #292929; margin: 0 0 .75rem; }
   .resource-detail .publication-meta { color: #212529; font-size: 16px; line-height: 24px; margin: 0; gap: 1rem; }
-  .resource-detail .resource-body h2 { font-family: "Poppins", sans-serif; font-weight: 500; font-size: 22px; line-height: 1.4; color: #003c71; margin: 2rem 0 1rem; }
+  .resource-detail .resource-body h2 { font-family: "Poppins", sans-serif; font-weight: 500; font-size: 22px; line-height: 1.4; color: #292929; margin: 2rem 0 1rem; }
   .resource-detail .resource-body h2:first-child { margin-top: 0; }
   .resource-detail .resource-body p { margin: 0 0 1rem; }
   .resource-detail .resource-body strong { font-weight: 700; }
-  .resource-detail .resource-body a { color: #127fa1; text-decoration: underline; text-underline-offset: .15em; overflow-wrap: anywhere; }
-  .resource-detail .resource-body a:hover { color: #003c71; }
+  .resource-detail .resource-body a { color: #292929; text-decoration: underline; text-underline-offset: .15em; overflow-wrap: anywhere; }
+  .resource-detail .resource-body a:hover { color: #292929; }
   .resource-detail .resource-body ul { padding-left: 1.25rem; list-style: disc; margin: 0 0 1.5rem; }
   .resource-detail .resource-body li { margin-bottom: .75rem; }
-  .resource-detail .resource-body a[href$=".pdf"] { display: inline-block; padding: .5rem 1rem; border-radius: 4px; background: #127fa1; color: #fff; text-decoration: none; }
-  .resource-detail .resource-body a[href$=".pdf"]:hover { background: #003c71; }
+  .resource-detail .resource-body a[href$=".pdf"] { display: inline-block; padding: .5rem 1rem; border-radius: 4px; background: #292929; color: #fff; text-decoration: none; }
+  .resource-detail .resource-body a[href$=".pdf"]:hover { background: #292929; }
   .dark .resource-detail { color: #e5e7eb; }
   .dark .resource-detail .resource-header h1, .dark .resource-detail .resource-body h2 { color: #b6d8f5; }
   .dark .resource-detail .publication-meta { color: #d1d5db; }
@@ -87,7 +87,7 @@
     .publication-item { grid-template-columns: 1fr; gap: 1rem; }
     .publication-meta { flex-direction: row; flex-wrap: wrap; gap: 1rem; }
   }
-  /* Match the approved ERRE brief: gray masthead/authors, blue headings, serif body. */
+  /* Match the approved ERRE brief: gray masthead/authors, dark headings, serif body. */
   .resource-detail .brief-title-block { padding-bottom:1rem; }
   .resource-detail .resource-header h1 { font-family:Georgia,serif; font-weight:700; }
   .resource-detail .resource-authors { color:#6b7280; font-family:Arial,sans-serif; }
@@ -97,8 +97,8 @@
   .resource-classification dt { font-weight:700; }
   .resource-classification dd { margin:0; }
   .resource-downloads { display:flex; flex-wrap:wrap; gap:.75rem; margin:1.5rem 0; }
-  .resource-detail .resource-body .resource-download { padding:.65rem 1rem; border-radius:4px; background:#127fa1; color:white; text-decoration:none; font:600 .875rem/1.5 Arial,sans-serif; }
-  .resource-detail .resource-body .resource-download:hover { background:#003c71; }
+  .resource-detail .resource-body .resource-download { padding:.65rem 1rem; border-radius:4px; background:#292929; color:white; text-decoration:none; font:600 .875rem/1.5 Arial,sans-serif; }
+  .resource-detail .resource-body .resource-download:hover { background:#292929; }
   .brief-disclaimer { font: .875rem/1.6 Arial,sans-serif; color:#6b7280; margin-top:2rem; }
   .resource-detail .brief-disclaimer h2 { color:inherit; font-size:1rem; }
   .dark .brief-kicker, .dark .brief-masthead, .dark .brief-disclaimer, .dark .resource-detail .resource-authors { color:#cbd5e1; }

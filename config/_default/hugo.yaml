@@ -42,9 +42,9 @@ imaging:
   hint: picture
 timeout: 600000
 taxonomies:
+  # Keep author profiles, but do not generate unused tag/type archive pages.
+  _merge: none
   author: authors
-  tag: tags
-  publication_type: publication_types
 markup:
   _merge: deep
   highlight:

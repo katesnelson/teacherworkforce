@@ -26,7 +26,6 @@ resource_authors: ""
 topic: []
 # Subtopic options are collected automatically from published resource pages.
 sub_topic: []
-education_level: []
 # Show only available access options. Never use a restricted publisher PDF here.
 brief_url: ""
 working_paper_url: ""

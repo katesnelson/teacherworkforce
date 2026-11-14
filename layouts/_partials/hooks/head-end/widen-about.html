@@ -1,8 +1,15 @@
 {{/* The markdown block hardcodes max-w-prose (65ch) with no configurable width
-     option. Widen it specifically within the #about section without touching
-     the vendored block template. */}}
+     option. Give the homepage About and Resources sections the same text
+     width without touching the vendored block template. */}}
 <style>
-  #about .max-w-prose {
+  #about .max-w-prose,
+  #resources .max-w-prose {
     max-width: 65rem;
+  }
+
+  /* Center the resource and topic links, retaining left-aligned introduction. */
+  #resources .prose > p:nth-of-type(2),
+  #resources .prose > p:nth-of-type(3) {
+    text-align: center;
   }
 </style>

@@ -10,8 +10,7 @@ brief_year: 2026
 brief_number: "010"
 resource_authors: "Christopher Redding and Tuan D. Nguyen"
 topic: ["Recruitment", "Retention"]
-sub_topic: ["Teacher Preparation and Certification", "Equity and Diversity"]
-education_level: ["K-12 Education"]
+sub_topic: ["Teacher Preparation and Certification"]
 description: "First-year teachers make up a large and growing share of the teaching force. What does the research tell us about their characteristics and professional needs?"
 description_source: "Original article standfirst (no abstract in supplied PDF)"
 why_it_matters: "A growing share of first-year teachers increases the importance of preparation and early-career support. This article describes how the newest teachers and their school placements have changed and discusses implications for practice."
@@ -22,5 +21,5 @@ acknowledgment: "This brief was produced with support from the Walton Family Fou
 citation: "Redding, C., & Nguyen, T. D. (2021). Greener than ever? A look at the newest teachers in our public schools. *Phi Delta Kappan, 103*(3), 8–12. https://doi.org/10.1177/00317217211058506"
 published_paper_url: "https://doi.org/10.1177/00317217211058506"
 brief_url: "/uploads/briefs/redding-2021-greener-than-ever-look-at-newest-teachers-our-brief.pdf"
-draft: false
+draft: true
 ---

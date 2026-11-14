@@ -11,7 +11,6 @@ brief_number: "012"
 resource_authors: "Tuan D. Nguyen, Elizabeth Bettini, Allison F. Gilmour, and Christopher Redding"
 topic: ["Recruitment"]
 sub_topic: ["Special Education", "Teacher Preparation and Certification"]
-education_level: ["K-12 Education"]
 description: "U.S. schools have long experienced shortages of special education teachers (SETs), challenging the nation’s capacity to ensure qualified SETs for students eligible for special education services. Addressing SET shortages requires preparation programs to supply sufficient numbers of new SETs to meet demand, yet prior research provides few insights into trends in the supply of new SETs. Thus, we examined how the supply of new SETs changed over time in relation to the characteristics of teacher preparation programs. We find a decreasing supply of new SETs nationally, primarily driven by a reduced supply of new SETs from small colleges. Results suggest the current SET shortage may be connected, in previously undocumented ways, to the broader decline of small- and mid-sized colleges. Finally, findings indicate the nation may be far more dependent on for-profit institutions for supplying new SETs, which has implications for the production of SETs by alternative certification and traditional teacher preparation programs."
 why_it_matters: "Persistent special educator shortages require attention to the institutions preparing new teachers. This study examines changes in production across institution size, sector, and for-profit status."
 data_and_sample: "The study uses national IPEDS and Title II data to examine special educator preparation from 2010–2020. The two sources measure related but distinct forms of completion and do not directly establish how many graduates enter teaching."
@@ -21,5 +20,5 @@ acknowledgment: "This brief was produced with support from the Walton Family Fou
 citation: "Nguyen, T. D., Bettini, E., Gilmour, A. F., & Redding, C. (2025). Examining the supply of new special educators: Variations by institutional characteristics and for-profit status. *Remedial and Special Education, 46*(6), 456–467. https://doi.org/10.1177/07419325241270044"
 published_paper_url: "https://doi.org/10.1177/07419325241270044"
 brief_url: "/uploads/briefs/nguyen-2025-examining-supply-new-special-educators-brief.pdf"
-draft: false
+draft: true
 ---

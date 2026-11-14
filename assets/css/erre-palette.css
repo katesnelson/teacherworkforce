@@ -1,0 +1,119 @@
+/* Fixed ERRE palette. Existing logos and the content typography are preserved. */
+:root {
+  --erre-black: #08090a;
+  --erre-charcoal: #333333;
+  --erre-ink: #292929;
+  --erre-gold: #f1b82d;
+  --erre-gold-hover: #ffca4b;
+  --erre-muted: #565656;
+  --erre-paper: #ffffff;
+  --erre-soft: #f7f7f5;
+  --erre-line: #d8d8d3;
+  color-scheme: light;
+}
+
+body { background: var(--erre-paper); color: var(--erre-ink); }
+::selection { background: #f8dfa2; color: var(--erre-ink); }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 3px solid #8a6300;
+  outline-offset: 4px;
+}
+
+/* White navigation on charcoal; gold indicates interaction. */
+#site-header, #site-header .navbar, #site-header #nav-menu {
+  background: var(--erre-charcoal);
+  color: #ffffff;
+}
+#site-header { border-bottom: 1px solid #484848; }
+#site-header .nav-link, #site-header .navbar-brand { color: #ffffff; }
+#site-header .nav-link:hover, #site-header .nav-link.active { color: var(--erre-gold); }
+#site-header :is(a, button, label):focus-visible { outline-color: var(--erre-gold); }
+
+/* Dark hero, without the template's colored background orbs. */
+#hero { background: var(--erre-black) !important; color: #ffffff; }
+#hero .pointer-events-none { display: none; }
+#hero h1, #hero h1 span {
+  background: none;
+  color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
+}
+#hero p { color: #e5e5e5; }
+#hero p.font-mono { color: #ffffff; }
+#hero p.font-mono > span { background: var(--erre-gold); }
+#hero p.text-xl, #hero [x-data^="typewriter"] { color: var(--erre-gold); }
+#hero a:is([href="#about"], [href="#contact"]) {
+  background: var(--erre-gold);
+  color: #171717;
+  border: 1px solid var(--erre-gold);
+  box-shadow: none;
+}
+#hero a:is([href="#about"], [href="#contact"]):hover {
+  background: var(--erre-gold-hover);
+  border-color: var(--erre-gold-hover);
+}
+#hero a:focus-visible { outline-color: #ffffff; }
+#hero .overflow-hidden.ring-4 {
+  max-width: 100%;
+  box-shadow: none;
+  --tw-ring-shadow: 0 0 #0000;
+}
+@media (max-width: 480px) {
+  #hero .overflow-hidden.ring-4 { width: calc(100vw - 3rem) !important; }
+}
+
+/* Light sections support long-form reading. */
+#about, #reports, #contact { background: var(--erre-paper) !important; }
+#team, #resources { background: var(--erre-soft) !important; }
+:is(#about, #team, #reports, #resources, #contact) :is(h1, h2, h3) { color: var(--erre-ink); }
+.prose { --tw-prose-body: var(--erre-ink); --tw-prose-headings: var(--erre-ink); --tw-prose-links: var(--erre-ink); }
+.prose a { color: var(--erre-ink); text-underline-offset: .2em; }
+.prose a:hover { color: #765300; }
+#resources .prose > p:nth-of-type(2) a {
+  display: inline-block;
+  padding: .75rem 1.5rem;
+  border-radius: 999px;
+  background: var(--erre-gold);
+  color: #171717;
+  text-decoration: none;
+  font-weight: 600;
+}
+#resources .prose > p:nth-of-type(2) a:hover { background: var(--erre-gold-hover); }
+#contact button { max-width: 100%; }
+#contact button > div { min-width: 0; }
+#contact button p { overflow-wrap: anywhere; }
+
+/* Consistent controls on the resources list and briefs. */
+.resource-page .resource-filters { background: var(--erre-soft); border-color: var(--erre-line); }
+.resource-page .publication-button,
+.resource-page.resource-detail .resource-body .resource-download,
+.resource-page.resource-detail .resource-body a[href$=".pdf"] {
+  background: var(--erre-gold);
+  border: 1px solid var(--erre-gold);
+  color: #171717;
+}
+.resource-page .publication-button:hover,
+.resource-page.resource-detail .resource-body .resource-download:hover,
+.resource-page.resource-detail .resource-body a[href$=".pdf"]:hover {
+  background: var(--erre-gold-hover);
+  color: #171717;
+}
+.resource-page .resource-filter-tag,
+.resource-page .resource-filter-reset { border-color: #77776f; }
+.resource-page .resource-filter-tag:hover,
+.resource-page .resource-filter-reset:hover { background: #f8e5b7; }
+.resource-page .resource-pagination [aria-current] { background: var(--erre-ink); color: #ffffff; }
+
+/* University legal footer spans the viewport. */
+footer:has(.university-footer) {
+  width: 100%;
+  max-width: none;
+  margin-bottom: 0;
+  padding: 2rem 1.5rem;
+  background: var(--erre-charcoal);
+  color: #e5e5e5;
+  border-top: 3px solid var(--erre-gold);
+}
+.university-footer { max-width: 1120px; margin-inline: auto; }
+.university-footer a { color: #ffffff; text-decoration: underline; text-underline-offset: .2em; }
+.university-footer a:hover { color: var(--erre-gold); }
+.university-footer a:focus-visible { outline-color: var(--erre-gold); }

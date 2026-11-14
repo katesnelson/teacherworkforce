@@ -11,7 +11,6 @@ brief_number: "020"
 resource_authors: "Andrew M. Camp, J. Cameron Anglum, Cory Koedel, Se Woong Lee, and Tuan D. Nguyen"
 topic: ["Recruitment", "Retention"]
 sub_topic: ["School Organization", "Rural Education"]
-education_level: ["K-12 Education"]
 description: "School districts across the United States are increasingly adopting the four-day school week, often in the hope of addressing teacher staffing challenges. We examine the effects of the four-day week on teacher recruitment and retention in Missouri, where 3 in 10 districts currently use it. After presenting qualitative data showing that educators believe the four-day week improves recruitment and retention, we estimate the effects of the four-day week on these outcomes using difference-in-differences models. We find no evidence that the four-day school week improves teacher retention or that districts expand their workforce post adoption, though the composition of new hires shifts toward more experienced teachers. We show that our findings are unlikely to be driven by saturation effects."
 why_it_matters: "Districts increasingly adopt four-day school weeks to improve staffing. This study contrasts educator perceptions with estimates of effects on recruitment and retention in Missouri."
 data_and_sample: "The study combines qualitative interviews with Missouri administrative data and difference-in-differences models. Its estimates concern Missouri districts and the adoption periods observed, not all four-day schedules nationally."
@@ -21,6 +20,6 @@ acknowledgment: "This brief was produced with support from the Walton Family Fou
 citation: "Camp, A. M., Anglum, J. C., Koedel, C., Lee, S. W., & Nguyen, T. D. (2026). The effects of the four-day school week on teacher recruitment and retention. *Educational Evaluation and Policy Analysis*. Advance online publication. https://doi.org/10.3102/01623737261464169"
 published_paper_url: "https://doi.org/10.3102/01623737261464169"
 brief_url: "/uploads/briefs/camp-2026-effects-four-day-school-week-teacher-recruitment-retention-brief.pdf"
-draft: false
+draft: true
 working_paper_url: "/uploads/working-papers/camp-2026-effects-four-day-school-week-teacher-recruitment-retention-working-paper.pdf"
 ---

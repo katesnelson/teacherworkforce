@@ -40,8 +40,8 @@ sections:
       animations: true
       background:
         color:
-          light: "#fafafa"
-          dark: "#0a0a0f"
+          light: "#08090A"
+          dark: "#08090A"
       spacing:
         padding: ["6rem", "0", "4rem", "0"]
 
@@ -126,9 +126,9 @@ sections:
       text: |-
         We translate research on educator recruitment, retention, and effectiveness into concise briefs to inform policy decisions.
 
-        Explore our resources [here](/resources/).
+        [Explore Our Resources](/resources/)
 
-        Browse by topic: [Recruitment](/resources/?topic=Recruitment) · [Retention](/resources/?topic=Retention) · [Effectiveness](/resources/?topic=Effectiveness)
+        Browse by Topic: [Recruitment](/resources/?topic=Recruitment) · [Retention](/resources/?topic=Retention) · [Effectiveness](/resources/?topic=Effectiveness)
     design:
       columns: '1'
       background:

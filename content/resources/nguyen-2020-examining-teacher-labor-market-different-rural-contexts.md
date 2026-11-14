@@ -11,7 +11,6 @@ brief_number: "004"
 resource_authors: "Tuan D. Nguyen"
 topic: ["Recruitment", "Retention"]
 sub_topic: ["Rural Education", "Working Conditions"]
-education_level: ["K-12 Education"]
 description: "Using repeated cross-sectional nationally representative data, we demonstrate how the teacher labor markets for rural contexts are different from those in urban-suburban areas. We also show that teacher attrition is not uniform across various rural settings. In particular, novice teachers in rural schools in sparsely populated states are more likely to turn over than novice teachers in urban-suburban schools in sparsely populated states. We also examine how teacher and school characteristics are associated with turnover in different rural contexts. The findings indicate there should be a concerted effort to examine teacher attrition in various rural contexts and not simply as delineation from urban-suburban areas."
 why_it_matters: "Rural staffing challenges depend on how rurality is defined. This study distinguishes rural schools, less urbanized states, and sparsely populated states to examine differences obscured by a single rural label."
 data_and_sample: "The study uses four waves of nationally representative Schools and Staffing Survey data and teacher follow-up information. Rural contexts are defined at both school and state levels."
@@ -21,5 +20,5 @@ acknowledgment: "This brief was produced with support from the Walton Family Fou
 citation: "Nguyen, T. D. (2020). Examining the teacher labor market in different rural contexts: Variations by urbanicity and rural states. *AERA Open, 6*(4), Article 2332858420966336. https://doi.org/10.1177/2332858420966336"
 published_paper_url: "https://doi.org/10.1177/2332858420966336"
 brief_url: "/uploads/briefs/nguyen-2020-examining-teacher-labor-market-different-rural-contexts-brief.pdf"
-draft: false
+draft: true
 ---

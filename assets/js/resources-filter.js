@@ -36,6 +36,8 @@
 
   function stateUrl(targetPage = page) {
     const url = new URL(window.location.href);
+    // Remove the retired filter from bookmarked URLs.
+    url.searchParams.delete('education_level');
     for (const select of selects) {
       if (select.value) url.searchParams.set(select.name, select.value);
       else url.searchParams.delete(select.name);
@@ -135,7 +137,6 @@
     const matches = items.filter(item =>
       (!selected.get('topic') || JSON.parse(item.dataset.topic).includes(selected.get('topic')))
       && (!selected.get('sub_topic') || JSON.parse(item.dataset.subTopic).includes(selected.get('sub_topic')))
-      && (!selected.get('education_level') || JSON.parse(item.dataset.educationLevel).includes(selected.get('education_level')))
       && terms.every(term => searchable.get(item).includes(term))
     );
     const titleOrder = (a, b) => a.dataset.title.localeCompare(b.dataset.title, 'en', {sensitivity: 'base'});

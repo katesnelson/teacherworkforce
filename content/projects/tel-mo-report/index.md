@@ -2,8 +2,6 @@
 title: "The Teacher Evaluation Landscape in Missouri (TEL-MO)"
 date: 2026-05-21
 summary: "A landscape analysis of teacher evaluation models used across Missouri school districts from 2022–23 through 2024–25."
-tags:
-  - Report
 authors:
   - tuan-nguyen
   - yujia-liu
