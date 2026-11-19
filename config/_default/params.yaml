@@ -15,6 +15,7 @@ hugoblox:
   identity:
     # Site name - shown in navbar, footer, copyright, and browser title by default
     name: "Educator Recruitment, Retention, and Effectiveness"
+    description: "The ERRE Center translates research on educator recruitment, retention, and effectiveness into evidence to inform education policy."
   branding:
     logo:
       filename: "logo.png"
@@ -25,7 +26,7 @@ hugoblox:
     # Short tagline displayed on your site
     tagline: "Your source for teacher workforce research"
     # Site meta description for search engines and social sharing
-    description: "Research center informational and information sharing website. Built with Hugo Blox."
+    description: "The ERRE Center translates research on educator recruitment, retention, and effectiveness into evidence to inform education policy."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: "yourusername"              # Twitter/X handle for Twitter Cards (without @)

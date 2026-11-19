@@ -1,4 +1,5 @@
 schema: hugoblox/author/v1
+summary: "Tuan D. Nguyen is the ERRE Center principal investigator and a University of Missouri researcher studying teacher labor markets and education policy."
 slug: tuan-nguyen
 is_owner: false
 name:
@@ -22,8 +23,8 @@ bio: |
   scholarship has shaped national policy conversations, with contributions to the Economic Report of
   the President, testimony before the U.S. Commission on Civil Rights, and frequent media coverage in
   outlets including the New York Times, Washington Post, NPR, and Education Week. He also maintains
-  widely used public resources, including www.teachershortages.com and the Community Assets and
-  Relative Rurality (CARR) index, www.ruralityindex.com.
+  widely used public resources, including the [*US Teacher Shortages*](https://www.teachershortages.com/) dataset
+  and the [*Community Assets and Relative Rurality (CARR) Index*](https://www.ruralityindex.com/) dataset.
 
 affiliations:
   - name: University of Missouri

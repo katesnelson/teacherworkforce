@@ -1,4 +1,5 @@
 ---
+summary: "Explore ERRE Center reports on teacher evaluation, educator labor markets, recruitment, retention, and effectiveness in Missouri and beyond."
 title: 'Reports'
 date: 2024-05-19
 type: landing
@@ -8,7 +9,8 @@ sections:
   - block: collection
     content:
       title: Reports
-      text: Recent ERRE reports.
+      heading_level: 1
+      text: Research that shapes teacher policy in Missouri.
       filters:
         folders:
           - projects

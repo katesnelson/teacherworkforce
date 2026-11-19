@@ -122,6 +122,40 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 #about, #reports, #contact { background: var(--erre-paper) !important; }
 #team, #resources { background: var(--erre-soft) !important; }
 :is(#about, #team, #reports, #resources, #contact) :is(h1, h2, h3) { color: var(--erre-ink); }
+/* All five homepage section titles share one visual and semantic level. */
+:is(#about, #team, #reports, #resources, #contact) h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: normal;
+}
+@media (min-width: 768px) {
+  :is(#about, #team, #reports, #resources, #contact) h2 { font-size: 2.25rem; }
+}
+#team .team-section-header { max-width: 62rem; margin-bottom: 2.5rem; }
+#team .team-section-header h2 { margin-bottom: 1rem; }
+#team .team-introduction {
+  max-width: none;
+}
+#team .team-introduction p { margin: 0; }
+#team .team-introduction,
+#reports h2 + p,
+#resources .prose > p:first-child,
+#contact h2 + p {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.65;
+  color: var(--erre-ink);
+}
+@media (min-width: 768px) {
+  #team .team-introduction,
+  #reports h2 + p,
+  #resources .prose > p:first-child,
+  #contact h2 + p { font-size: 1.25rem; }
+}
 .prose { --tw-prose-body: var(--erre-ink); --tw-prose-headings: var(--erre-ink); --tw-prose-links: var(--erre-ink); }
 .prose a { color: var(--erre-ink); text-underline-offset: .2em; }
 .prose a:hover { color: #765300; }

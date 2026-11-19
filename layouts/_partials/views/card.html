@@ -125,14 +125,18 @@
       </div>
       {{ end }}
 
+      {{ if eq (.config.heading_level | default 3) 2 }}
+      <h2 id="card-title-{{ $item.File.UniqueID }}" class="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-200 leading-tight">
+      {{ else }}
       <h3 id="card-title-{{ $item.File.UniqueID }}" class="text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors duration-200 leading-tight">
+      {{ end }}
         <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="hover:underline">
           {{ $item.Title }}
           {{ if $item.Params.external_link }}
             {{ partial "functions/get_icon" (dict "name" "arrow-top-right-on-square" "attributes" "style=\"height: 1em;\" class=\"inline-flex h-4 w-4 ml-1 align-text-top\"") }}
           {{ end }}
         </a>
-      </h3>
+      {{ if eq (.config.heading_level | default 3) 2 }}</h2>{{ else }}</h3>{{ end }}
 
       <p class="text-zinc-600 dark:text-zinc-400 text-base leading-relaxed line-clamp-3">
         {{ (partial "functions/get_summary" $item) | plainify | htmlUnescape | truncate 180 }}

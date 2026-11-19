@@ -3,4 +3,4 @@ title: 'Resources'
 type: resources
 ---
 
-We translate research on educator recruitment, retention, and effectiveness into concise briefs to inform policy decisions.
+We turn educator workforce research into briefs that inform policy.

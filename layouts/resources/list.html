@@ -5,7 +5,7 @@
 {{ range $publications }}
   {{ range (partial "resource-values.html" .Params.sub_topic) }}{{ $subTopics = $subTopics | append . }}{{ end }}
 {{ end }}
-<main class="resource-page resource-list-page" id="publications">
+<div class="resource-page resource-list-page" id="publications">
   <header class="resource-header">
     <h1>{{ .Title }}</h1>
     <div class="resource-intro">{{ .Content }}</div>
@@ -68,7 +68,7 @@
       {{ if not $publications }}<noscript><p>Publications will be added soon.</p></noscript>{{ end }}
     </div>
   </div>
-</main>
+</div>
 {{ $filterScript := resources.Get "js/resources-filter.js" | minify | fingerprint }}
 <script src="{{ $filterScript.RelPermalink }}" integrity="{{ $filterScript.Data.Integrity }}" defer></script>
 {{ end }}

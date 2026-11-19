@@ -1,4 +1,5 @@
 ---
+summary: "An ERRE research brief on changes in American STEM teachers’ demographics, qualifications, and turnover from 1988 to 2012, with policy implications."
 # Publication year only; January 1 is a sorting placeholder.
 title: "Changes in the demographics, qualifications, and turnover of American STEM teachers, 1988–2012"
 date: "2018-01-01"

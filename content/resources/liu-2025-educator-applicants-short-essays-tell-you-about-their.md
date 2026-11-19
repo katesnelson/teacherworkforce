@@ -1,4 +1,5 @@
 ---
+summary: "An ERRE research brief on how educator applicants’ short essays relate to hiring, retention, and job performance in a California school district."
 # Publication year only; January 1 is a sorting placeholder.
 title: "What educator applicants’ short essays tell you about their potential job fit and performance"
 date: "2025-01-01"

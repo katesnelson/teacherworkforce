@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title: ''
-summary: ''
+summary: "The ERRE Center conducts research on educator recruitment, retention, and effectiveness to inform education policy in Missouri and across the nation."
 date: 2026-01-05
 type: landing
 
@@ -70,7 +70,6 @@ sections:
     id: team
     content:
       title: Meet Our Team
-      subtitle: Research that shapes teacher policy in Missouri
       text: Our team brings expertise in education policy, labor economics, and rigorous quantitative methods.
       user_groups:
         - Leadership
@@ -95,7 +94,7 @@ sections:
     id: reports
     content:
       title: "Recent Reports"
-      subtitle: "Recent ERRE reports."
+      subtitle: "Research that shapes teacher policy in Missouri."
       count: 0
       filters:
         folders:
@@ -125,7 +124,7 @@ sections:
       title: Resources
       subtitle: Research and practice resources
       text: |-
-        We translate research on educator recruitment, retention, and effectiveness into concise briefs to inform policy decisions.
+        We turn educator workforce research into briefs that inform policy.
 
         [Explore Our Resources](/resources/)
 
@@ -167,7 +166,7 @@ sections:
     id: contact
     content:
       title: Get In Touch
-      subtitle: "We welcome inquiries from researchers, policymakers, and partners"
+      subtitle: "We welcome inquiries from researchers, policymakers, and partners."
       text: |-
         We are always interested in hearing about new projects and opportunities.
       email: tuan.nguyen@missouri.edu

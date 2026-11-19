@@ -67,7 +67,7 @@
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
   {{/* Section Header */}}
-  <div class="{{ $headerContainerClass }}">
+  <div class="team-section-header {{ $headerContainerClass }}">
     {{ with $title }}
     <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white tracking-tight mb-4">
       {{ . }}
@@ -81,7 +81,7 @@
     {{ end }}
 
     {{ with $text }}
-    <div class="prose dark:prose-invert">
+    <div class="team-introduction prose dark:prose-invert">
       {{ . }}
     </div>
     {{ end }}
@@ -283,7 +283,7 @@
                 {{ end }}
 
                 {{ $bio := "" }}
-                {{ with $profile.bio }}{{ $bio = printf "%v" . }}{{ end }}
+                {{ with $profile.bio }}{{ $bio = printf "%v" . | markdownify | plainify }}{{ end }}
                 {{ with $bio }}
                 <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">
                   {{ . }}
@@ -478,7 +478,7 @@
               </div>
               {{ end }}
               {{ $bio := "" }}
-              {{ with $profile.bio }}{{ $bio = printf "%v" . }}{{ end }}
+              {{ with $profile.bio }}{{ $bio = printf "%v" . | markdownify | plainify }}{{ end }}
               {{ with $bio }}
               <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">{{ . }}</p>
               {{ end }}
