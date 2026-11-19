@@ -14,6 +14,7 @@ sections:
       greeting: "Welcome"
       show_status: true
       show_scroll_indicator: true
+      scroll_target: "#about"
       typewriter:
         enable: true
         prefix: "We provide"
@@ -83,7 +84,7 @@ sections:
       show_interests: true
       max_interests: 3   # set 0 to hide interests even if provided
       align: center      # or "left" to align header + CTA left
-      max_columns: 4     # 2, 3, or 4
+      max_columns: 4     # Preserve the original card size; CSS centers the three cards.
       show_social: false
       show_empty_groups: false # show a placeholder when a group has no members
       # Section background color (CSS class)

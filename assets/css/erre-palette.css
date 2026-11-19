@@ -1,9 +1,9 @@
-/* Fixed ERRE palette. Existing logos and the content typography are preserved. */
+/* Fixed ERRE palette and homepage presentation. */
 :root {
   --erre-black: #08090a;
   --erre-charcoal: #333333;
   --erre-ink: #292929;
-  --erre-gold: #f1b82d;
+  --erre-gold: #fdb719;
   --erre-gold-hover: #ffca4b;
   --erre-muted: #565656;
   --erre-paper: #ffffff;
@@ -41,24 +41,81 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 #hero p.font-mono { color: #ffffff; }
 #hero p.font-mono > span { background: var(--erre-gold); }
 #hero p.text-xl, #hero [x-data^="typewriter"] { color: var(--erre-gold); }
-#hero a:is([href="#about"], [href="#contact"]) {
+#hero a:is([href="#about"], [href="#contact"]):not([aria-label]) {
   background: var(--erre-gold);
   color: #171717;
   border: 1px solid var(--erre-gold);
   box-shadow: none;
 }
-#hero a:is([href="#about"], [href="#contact"]):hover {
+#hero a:is([href="#about"], [href="#contact"]):not([aria-label]):hover {
   background: var(--erre-gold-hover);
   border-color: var(--erre-gold-hover);
 }
 #hero a:focus-visible { outline-color: #ffffff; }
+/* Compact, centered hero inspired by the university mockup. */
+#hero { padding: 0 !important; }
+/* Fill the first screen on tall monitors; grow naturally on smaller screens. */
+#hero > .relative {
+  min-height: calc(100vh - var(--navbar-height, 73px));
+  min-height: calc(100svh - var(--navbar-height, 73px));
+}
+#hero .z-10 { width: 100%; max-width: 70rem; min-height: inherit; padding-top: 3rem; padding-bottom: 6rem; }
 #hero .overflow-hidden.ring-4 {
-  max-width: 100%;
+  width: 396px;
+  max-width: calc(100vw - 3rem);
+  height: auto;
+  aspect-ratio: 396 / 144;
+  border-radius: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   box-shadow: none;
   --tw-ring-shadow: 0 0 #0000;
 }
-@media (max-width: 480px) {
-  #hero .overflow-hidden.ring-4 { width: calc(100vw - 3rem) !important; }
+#hero .overflow-hidden.ring-4 img { object-fit: contain; }
+#hero .z-10 > .mb-8 { margin-bottom: 1.5rem; }
+#hero p.font-mono {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  gap: .5rem;
+  margin-bottom: 1rem;
+}
+#hero p.font-mono > span { width: 4rem; }
+#hero h1 {
+  max-width: 62rem;
+  margin: 0 auto 1.25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(2rem, 4.6vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: .01em;
+  text-wrap: balance;
+}
+#hero p.text-xl {
+  max-width: 54rem;
+  margin: 0 auto 1rem;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  min-height: 3.2em; /* Reserve two lines for the longest rotating sentence. */
+  font-weight: 400;
+}
+#hero p.max-w-2xl {
+  max-width: 42rem;
+  margin-bottom: 1.75rem;
+  font-size: 1.125rem;
+  line-height: 1.65;
+}
+#hero a:is([href="#about"], [href="#contact"]):not([aria-label]) {
+  padding: .625rem 1.5rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+#hero a[aria-label="Scroll to content"] { bottom: 1.5rem; }
+@media (max-width: 640px) {
+  #hero .z-10 { padding-top: 2rem; padding-bottom: 6rem; }
+  #hero .overflow-hidden.ring-4 { width: 340px; }
+  #hero p.text-xl { min-height: 4.8em; }
 }
 
 /* Light sections support long-form reading. */

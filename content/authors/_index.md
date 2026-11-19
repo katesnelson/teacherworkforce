@@ -1,4 +1,6 @@
 ---
-# To publish author profile pages, remove all the `build` and `cascade` settings below.
-
+# Hide the author directory without affecting individual team profiles.
+build:
+  render: never
+  list: never
 ---

@@ -8,4 +8,48 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* Match About's 65rem wrapper minus its two 1.5rem text gutters. */
+  #team > .max-w-7xl,
+  #reports > .max-w-7xl {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  #team .grid,
+  #team .col-span-full,
+  #reports .grid {
+    max-width: 62rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Center incomplete rows too, such as the third card on tablet screens. */
+  #team .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+
+  #team .grid > .group {
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    #team .grid > .group {
+      width: calc((100% - 2.5rem) / 2);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    #team .grid {
+      justify-content: space-between;
+    }
+
+    #team .grid > .group {
+      /* Original desktop card size; extra room becomes spacing between cards. */
+      width: min(17.5rem, calc((100% - 5rem) / 3));
+    }
+  }
 </style>

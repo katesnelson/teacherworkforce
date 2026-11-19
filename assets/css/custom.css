@@ -1,47 +1,17 @@
-/* Override Hugo Blox dev-hero avatar sizing */
-/* Hide the actual Hugo avatar image entirely */
-#hero .overflow-hidden.ring-4 img {
-  display: none !important;
+/* The university signature is a non-interactive image, not a homepage link. */
+#site-header .university-logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  cursor: default;
 }
 
-/* Replace avatar area with your real logo image */
-#hero .overflow-hidden.ring-4 {
-  width: 420px !important;
-  height: 149px !important;
-
-  background-image: url("../media/me.png") !important;
-  background-repeat: no-repeat !important;
-  background-position: center center !important;
-  background-size: contain !important;
-
-  border-radius: 0 !important;
-
-  overflow: hidden !important;
-}
-
-/* Force the hero avatar image to stop cropping */
-#hero img {
-  object-fit: contain !important;
-  object-position: center center !important;
-
-  width: 420px !important;
-  height: 149px !important;
-
-  max-width: none !important;
-  max-height: none !important;
-}
-
-/* Replace the homepage/brand link in the header with logo */
-header a[href="/"],
-nav a[href="/"] {
-  font-size: 0 !important;
-  width: 30px;
-  height: 30px;
-  display: inline-block;
-  background-image: url("/media/logo.png");
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: contain;
+#site-header .university-logo img {
+  display: block;
+  width: 135px;
+  height: auto;
+  max-width: 38vw;
+  object-fit: contain;
 }
 
 /* Compact only the top navigation items, not the left brand logo */
@@ -51,8 +21,37 @@ header .navbar-nav {
 }
 
 header .navbar-nav > li > a:not([href="/"]) {
-  font-size: 0.85rem !important;
+  font-size: 1rem !important;
+  font-weight: 600;
   padding: 0.3rem 0.5rem !important;
   line-height: 1.2 !important;
   white-space: nowrap !important;
+}
+
+/* Equal outer columns keep the desktop menu on the page's center line. */
+@media (min-width: 1024px) {
+  #site-header .navbar {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+  }
+
+  #site-header .navbar > div:first-child {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+  }
+
+  #site-header #nav-menu {
+    grid-column: 2;
+    grid-row: 1;
+    margin-inline: 0;
+    justify-self: center;
+  }
+
+  #site-header .navbar > div:last-child {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+  }
 }

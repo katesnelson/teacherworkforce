@@ -19,6 +19,11 @@
     "params" $params      
   }}
 
+  {{/* Keep the center's data for the homepage, but do not publish its profile. */}}
+  {{ if eq $slug "me" }}
+    {{ $page = merge $page (dict "build" (dict "render" "never" "list" "never")) }}
+  {{ end }}
+
   {{/* Add the page to Hugo's build */}}
   {{ $.AddPage $page }}
 

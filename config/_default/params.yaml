@@ -42,7 +42,7 @@ hugoblox:
     # Optional: Override theme pack colors
     colors:
       primary: "#292929"                 # Accessible dark accents on light surfaces
-      secondary: "#F1B82D"
+      secondary: "#FDB719"
       neutral: ""                       # Affects gray utilities (text-gray-*, bg-gray-*)
     # Optional: Mode-specific color overrides
     colors_light: {}

@@ -7,11 +7,10 @@ authors:
   - yujia-liu
   - cory-koedel
 featured: true
+card_image_alt: "TEL-MO report"
+image:
+  preview_only: true # Keep card previews; omit the duplicate image above the report body.
 ---
-
-**ERRE Report · May 2026**
-**Authors:** Tuan D. Nguyen, Yujia Liu, & Cory Koedel
-**Educator Recruitment, Retention, and Effectiveness (ERRE) Center, University of Missouri**
 
 This report presents a landscape analysis of teacher evaluation models used across Missouri school districts during the post-COVID period from the 2022–23 through 2024–25 school years. It offers a descriptive overview of the evaluation models, examines their geographic distribution, and explores variation across districts operating in different contexts. The analysis draws primarily on the annual Educator Evaluation Survey administered by the Missouri Department of Elementary and Secondary Education.
 
